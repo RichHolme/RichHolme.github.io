@@ -1,1 +1,533 @@
-<h1>Working</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Images</title>
+	<link rel="stylesheet"
+	  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+	  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+	  crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <!-- <script type="text/javascript"></script> -->
+	<script src="app.js"></script>
+	  <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css"> -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<style type="text/css">
+		.icon{
+			height: 100px;
+			width: 100px;
+			/*border: 1px solid black;*/
+		}
+
+		.img{
+			height: 300px;
+			/*width: 200px;*/
+			/*box-shadow: 1px 1px 10px 2px #696767;*/
+		}
+
+		.info{
+			height: 250px;
+			/*width: 200px;*/
+			/*border: 1px solid black;*/
+			/*box-shadow: 1px 1px 1px 1px #888888;*/
+			margin: 10px;
+			/*padding: 10px;*/
+			padding: 25px;
+			padding-top: 0px;
+			/*padding-left: 25px;*/
+			/*line-height: 100px !important;*/
+		}
+
+		.mainProjectInfo{
+			height: 500px;
+			/*width: 200px;*/
+			/*border: 1px solid black;*/
+			/*box-shadow: 1px 1px 1px 1px #888888;*/
+			margin: 10px;
+			/*padding: 10px;*/
+			padding: 25px;
+			padding-top: 0px;
+		}
+
+		.close{
+			/*position: absolute;
+			top: 0px;*/
+			/*left: 0px;*/
+			/*float: right;*/
+
+		}
+
+		.row{
+			text-align: center;
+		}
+
+		.techIcon{
+			height: 30px;
+			width: 30px;
+		}
+
+		.projectTitle{
+			/*font-size: 20px;*/
+			/*position: absolute;
+			top: 0px;*/
+			/*float: left;*/
+		}
+
+		.projectInfo{
+			text-align: left;
+			clear: both;
+			font-size: 17px;
+		}
+
+		.techUsed{
+			height: 50px;
+			width: 50px;
+		}
+
+		.projectText{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		#profile,
+		#frontEnd{
+			height: 100vh;
+			border-bottom: 1px solid black;
+		}
+
+		.bigProject{
+			height: 275px;
+			width: 510px;
+			/*border-radius: 25%;*/
+			z-index: -1;
+			position: absolute;
+			margin-top: 22px;
+			margin-left: 22px;
+		}
+
+		.rowLabel{
+			margin-top: 35px;
+			margin-bottom: 70px;
+		}
+
+		.desktop{
+			height: 425px;
+			width: 550px;
+			z-index: 1;
+			position: relative;
+			top: 0;
+		}
+
+	</style>
+	
+	<div class="container">
+
+		<div id="profile" class="row">
+			<div class="row">
+				<h1 class="rowLabel">The Heavy Hitters</h1>
+			</div>
+			
+			<div class=" col-md-6">
+				<!-- <img class="mainProjectPic" src="http://simpsonswiki.com/w/images/0/01/Springfield_Library.png"> -->
+				
+				<!-- <div class="col-md-4"> -->
+					<div class="movie">
+						<!-- cowboy -->
+						<!-- <img class="bigProject" src="http://simpsonswiki.com/w/images/0/01/Springfield_Library.png" /> -->
+						<img class="bigProject" src="m.png" />
+
+						<img class="desktop" src="desktop.png">
+						<!-- <h3>Wild West Hangman</h3> -->
+						<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+						<h3>To Read or Not to Read?</h3>
+						<div>
+							<button id="movie" class="infoBtn btn btn-default">Info</button>
+						</div>
+
+					</div>
+					
+					<div class="animated fadeInUp movieInfo mainProjectInfo" style="">
+						<!-- <button class="close">X</button> -->
+						<div style="text-align: left">
+							<h3 class="projectTitle">Read
+							<button id="movieClose" class="btn btn-default close">X</button>
+							</h3>
+							
+						</div>
+						
+						<!-- <span class="projectTitle">Hangman of the Hollwood West</span> -->
+						<div class="projectInfo">
+							
+							<div class="projectText">
+								That is the question.... Have you ever wondered if your book was made into a movie? 
+	                            Maybe it's crunch time and Ms. Unpleasant just changed the due date of your paper. What 
+	                            I’ve created is a one stop shop to help you solve these dilemmas. Search for your book 
+	                            and check out the “would you read poll” to help you make your decision. If there's an 
+	                            accompanying film, you can find the details and watch the trailer.
+							</div>
+
+							<div>
+								
+								<img class="techUsed" src="three.png">
+								<img class="techUsed" src="jquery.png">
+								<img class="techUsed" src="bootstrap.png">
+								<img class="techUsed" src="ajax.png">
+								<img class="techUsed" src="firebase.png">
+
+							</div>
+
+							<div>
+								<br>
+								<a href="">Site</a> | <a href="">Code</a>
+							</div>
+
+						</div>
+
+					<!-- </div> -->
+						
+					<!-- </div> -->
+
+				</div>
+
+			</div>
+
+			<div class=" col-md-6">
+				<!-- <img class="mainProjectPic" src="http://simpsonswiki.com/w/images/0/01/Springfield_Library.png"> -->
+				
+				<!-- <div class="col-md-4"> -->
+					<div class="dog">
+						<!-- cowboy -->
+						<!-- <img class="bigProject" src="https://media.giphy.com/media/NmGbJwLl7Y4lG/giphy.gif" /> -->
+						<img class="bigProject" src="dog.png" />
+
+						<img class="desktop" src="desktop.png">
+						<!-- <h3>Wild West Hangman</h3> -->
+						<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+						<h3>FaceBark</h3>
+						<div>
+							<button id="dog" class="infoBtn btn btn-default">Info</button>
+						</div>
+
+					</div>
+					
+					<div class="animated fadeInUp dogInfo mainProjectInfo" style="">
+						<!-- <button class="close">X</button> -->
+						<div style="text-align: left">
+							<h3 class="projectTitle">Facebark
+							<button id="dogClose" class="btn btn-default close">X</button>
+							</h3>
+							
+						</div>
+						
+						<!-- <span class="projectTitle">Hangman of the Hollwood West</span> -->
+						<div class="projectInfo">
+							
+							<div class="projectText">
+								Have a dog and like to socialize? Then this is the site for you! Create a 
+		                        profile for your dog, build a customized search for parks in your area, see who’s 
+		                        there, and meet up with fellow dog owners! (Your dog's tail just started wagging.)
+							</div>
+
+							<div>
+								
+								<img class="techUsed" src="three.png">
+								<img class="techUsed" src="jquery.png">
+								<img class="techUsed" src="bootstrap.png">
+								<img class="techUsed" src="ajax.png">
+								<img class="techUsed" src="firebase.png">
+
+							</div>
+
+							<div>
+								<br>
+								<a href="">Site</a> | <a href="">Code</a>
+							</div>
+
+						</div>
+
+					<!-- </div> -->
+						
+					<!-- </div> -->
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="frontEnd" class="row">
+	
+			<!-- <div class="row"> -->
+
+				<div class="row">
+
+					<h1 class="rowLabel">Front End Apps</h1>
+					
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="cowboy img">
+							<!-- cowboy -->
+							<img class="icon" src="cowboy-hat.png" />
+							<!-- <h3>Wild West Hangman</h3> -->
+							<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+							<h3>Wild West Hangman</h3>
+							<div>
+								<button id="cowboy" class="infoBtn btn btn-default">Info</button>
+							</div>
+
+						</div>
+						
+						<div class="animated fadeInUp cowboyInfo info" style="">
+							<!-- <button class="close">X</button> -->
+							<div style="text-align: left">
+								<h3 class="projectTitle">Hangman
+								<button id="cowboyClose" class="btn btn-default close">X</button>
+								</h3>
+								
+							</div>
+							
+							<!-- <span class="projectTitle">Hangman of the Hollwood West</span> -->
+							<div class="projectInfo">
+								
+								<div class="projectText">
+									Test your knowledge of great Hollywood western actors!
+								</div>
+
+								<div>
+									
+									<img class="techUsed" src="html.png">
+									<img class="techUsed" src="css.png">
+									<img class="techUsed" src="javascript.png">
+									<img class="techUsed" src="jquery.png">
+
+								</div>
+
+								<div>
+									<br>
+									<a href="">Site</a> | <a href="">Code</a>
+								</div>
+
+							</div>
+
+						</div>
+							
+						<!-- </div> -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="lion img">
+							
+							<!-- lion -->
+							<img class="icon" src="lion.png" />
+
+							<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+							<h3>Lion King Battle</h3>
+
+							<div>
+								<button id="lion" class="infoBtn btn btn-default">Info</button>
+							</div>
+
+						</div>
+
+						<div class="animated fadeInUp lionInfo info">
+							<!-- <button class="close">X</button> -->
+
+							<div style="text-align: left">
+								<h3 class="projectTitle">Battle
+								<button id="lionClose" class="btn btn-default close">X</button>
+								</h3>
+								
+							</div>
+
+							<div class="projectInfo">
+								
+								<div class="projectText">
+									Choose from your favorite Lion King characters and do battle!
+								</div>
+
+								<div>
+									
+									<img class="techUsed" src="html.png">
+									<img class="techUsed" src="css.png">
+									<img class="techUsed" src="javascript.png">
+									<img class="techUsed" src="jquery.png">
+
+								</div>
+
+								<div>
+									<br>
+									<a href="">Site</a> | <a href="">Code</a>
+								</div>
+
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="globe img"">
+							
+							<!-- globe -->
+
+							<img class="icon" src="worldwide.png" />
+
+							<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+							
+							<h3>World Trivia</h3>
+							<div>
+								<button id="globe" class="infoBtn btn btn-default">Info</button>
+							</div>
+
+						</div>
+
+						<div class="animated fadeInUp globeInfo info">
+							<!-- <button class="close">X</button> -->
+					
+							<div style="text-align: left">
+								<h3 class="projectTitle">Trivia
+								<button id="globeClose" class="btn btn-default close">X</button>
+								</h3>
+								
+							</div>
+							
+							<div class="projectInfo">
+								
+								<div class="projectText">
+									A game of world trivia. Choose the best answer, but hurry before you run out of time! 
+								</div>
+
+								<div>
+									
+									<img class="techUsed" src="html.png">
+									<img class="techUsed" src="css.png">
+									<img class="techUsed" src="javascript.png">
+									<img class="techUsed" src="jquery.png">
+
+								</div>
+
+								<div>
+									<br>
+									<a href="">Site</a> | <a href="">Code</a>
+								</div>
+
+							</div>
+
+						</div>
+									
+					</div>
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-4">
+
+							<div class="soldier img"">
+								
+								<!-- globe -->
+
+								<img class="icon" src="soldier.png" />
+
+								<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+								
+								<h3>The Dirty Dozen Puzzle</h3>
+								<div>
+									<button id="soldier" class="infoBtn btn btn-default">Info</button>
+								</div>
+
+							</div>
+
+							<div class="animated fadeInUp soldierInfo info">
+							<!-- <button class="close">X</button> -->
+					
+								<div style="text-align: left">
+								<h3 class="projectTitle">Puzzle
+								<button id="soldierClose" class="btn btn-default close">X</button>
+								</h3>
+								
+								</div>
+							
+								<div class="projectInfo">
+								
+								<div class="projectText">
+									Let the cast of The Dirty Dozen put your memory to the test!
+								</div>
+
+								<div>
+									
+									<img class="techUsed" src="react.png">
+									<img class="techUsed" src="html.png">
+									<img class="techUsed" src="css.png">
+									<img class="techUsed" src="javascript.png">
+									
+
+								</div>
+
+								<div>
+									<br>
+									<a href="">Site</a> | <a href="">Code</a>
+								</div>
+
+							</div>
+					</div>
+
+				</div>
+
+			<!-- </div> -->
+		
+		</div>
+</div>
+		<!-- spinach -->
+
+		<!-- <img src="spinach.png">
+
+		<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+
+
+		<div>
+			NOTES: add col-xs-12 to all columns. not touching width right now so should be reasonably responsive. make sure to remove "don't be scared" from about me, make it sound more experienced. get a better pic or remove it all together. make "heavy hitters" section full page, then section according genre (each full page). make final "goodbye page" with something funny and a way to contact. personal logo? clean up indentation issue in world trivia column
+		</div>
+
+		<!-- </div>
+
+				<div class="col-md-4">
+
+					<div class="rock img">
+						
+						
+						<img class="icon" src="paper(1).png" />
+
+						<div>Icons made by <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+						<div><button id="rock" class="infoBtn btn btn-default">Info</button></div>
+
+					</div>
+
+					<div class="animated fadeInUp rockInfo info">
+						
+						<button id="rockClose" class="btn btn-default close">X</button>
+						<br>Some info about rock paper sissors game
+						
+					</div>
+					
+				</div>
+
+		</div> -->
+		
+	
+	</div>
+</body>
+</html>
