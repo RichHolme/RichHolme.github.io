@@ -18,6 +18,12 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- slick css -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+	<!-- slick js -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+
 </head>
 <body>
 	<style type="text/css">
@@ -97,11 +103,16 @@
 			margin-bottom: 20px;
 		}
 
-		#profile,
-		#frontEnd{
+		#hitters,
+		#profile{
 			height: 100vh;
 			border-bottom: 1px solid black;
 		}
+
+		/*#profile{
+			background-image: url("hello.png");
+			background-repeat: no-repeat;
+		}*/
 
 		.bigProject{
 			height: 275px;
@@ -126,23 +137,85 @@
 			top: 0;
 		}
 
+		.tablet{
+			margin-top: 50px;
+			height: 325px;
+			width: 550px;
+			z-index: 1;
+			position: relative;
+			top: 0;
+		}
+
+		#profileImg{
+			border-radius: 50%;
+			height: 200px;
+		}
+
 	</style>
 	
 	<div class="container">
 
 		<div id="profile" class="row">
+			
+			<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<img id="profileImg" src='profile.png'>
+				</div>
+
+				<div class="col-md-6 col-xs-12">
+					<div>
+	                        
+	                    <div className="">
+	                       	<h1 id="aboutMe">Who's This Guy?</h1>
+	                        Thanks for visiting my site! My name is Ricard Holme and I'm a web developer living in Raleigh NC. I enjoy a challenge and seek perfection in what I do. Prior to my "techiness", I was employed by the Inter-Faith Food Shuttle and served my community with some really "cool" people. I graduated from the Code Bootcamp at UNC Chapel Hill in July 2018. I am currently pursuing an Associate of Engineering at Wake Tech. My goal is to earn a Bachelor of Computer Science at NC State. I'm always seeking an opportunity to gain experience and learn something new. 
+	                    </div>
+	                </div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div>
+                    <h1 className="skills">Got Skills?</h1>
+                    <div>
+                                <!-- Node.js, Express, JavaScript, .NET, jQuery, React, GIT, GitHub, MongoDB, MySQL, 
+                                Sequelize, Firebase, HTML, CSS, Bootstrap, Materialize, Chai, Mocha, REST, APIs, JSON, AJAX, 
+                                CLI, OOP  -->
+
+                        <div class="slick autoplay">
+						  <div><img class="techUsed" src="three.png"></div>
+						  <div><img class="techUsed" src="jquery.png"></div>
+						  <div><img class="techUsed" src="bootstrap.png"></div>
+						  <div><img class="techUsed" src="ajax.png"></div>
+						  <div><img class="techUsed" src="firebase.png"></div>
+						  <div><img class="techUsed" src="node.png"></div>
+						  <div><img class="techUsed" src="express.png"></div>
+						  <div><img class="techUsed" src="react.png"></div>
+						  <div><img class="techUsed" src="git.png"></div>
+						  <div><img class="techUsed" src="github.png"></div>
+						  <div><img class="techUsed" src="mongo.png"></div>
+						  <div><img class="techUsed" src="mysql.png"></div>
+						  <div><img class="techUsed" src="material.png"></div>
+						  
+						</div>
+                    </div>
+                </div>
+			</div>
+			
+		</div>
+
+		<div id="hitters" class="row">
 			<div class="row">
 				<h1 class="rowLabel">The Heavy Hitters</h1>
 			</div>
 			
-			<div class=" col-md-6">
+			<div class=" col-md-6 col-xs-12">
 				<!-- <img class="mainProjectPic" src="http://simpsonswiki.com/w/images/0/01/Springfield_Library.png"> -->
 				
 				<!-- <div class="col-md-4"> -->
 					<div class="movie">
 						<!-- cowboy -->
 						<!-- <img class="bigProject" src="http://simpsonswiki.com/w/images/0/01/Springfield_Library.png" /> -->
-						<img class="bigProject" src="movie.png" />
+						<img class="bigProject" src="./movie.png" />
 
 						<img class="desktop" src="desktop.png">
 						<!-- <h3>Wild West Hangman</h3> -->
@@ -199,14 +272,14 @@
 
 			</div>
 
-			<div class=" col-md-6">
+			<div class=" col-md-6 col-xs-12">
 				<!-- <img class="mainProjectPic" src="http://simpsonswiki.com/w/images/0/01/Springfield_Library.png"> -->
 				
 				<!-- <div class="col-md-4"> -->
 					<div class="dog">
 						<!-- cowboy -->
 						<!-- <img class="bigProject" src="https://media.giphy.com/media/NmGbJwLl7Y4lG/giphy.gif" /> -->
-						<img class="bigProject" src="dog.png" />
+						<img class="bigProject" src="./dog.png" />
 
 						<img class="desktop" src="desktop.png">
 						<!-- <h3>Wild West Hangman</h3> -->
@@ -263,35 +336,35 @@
 
 		</div>
 
-		<div id="frontEnd" class="row">
+		<div id="apps" class="row">
 	
 			<!-- <div class="row"> -->
 
 				<div class="row">
 
-					<h1 class="rowLabel">Front End Apps</h1>
+					<h1 class="rowLabel">Apps Built</h1>
 					
 				</div>
 
 				<div class="row">
+
 					<div class="col-md-4">
-						<div class="cowboy img">
-							<!-- cowboy -->
-							<img class="icon" src="cowboy-hat.png" />
-							<!-- <h3>Wild West Hangman</h3> -->
-							<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-							<h3>Wild West Hangman</h3>
+						<div class="soldier img">
+							
+							<img class="icon" src="soldier.png" />
+							
+							<h3>The Dirty Dozen Puzzle</h3>
 							<div>
-								<button id="cowboy" class="infoBtn btn btn-default">Info</button>
+								<button id="soldier" class="infoBtn btn btn-default">Info</button>
 							</div>
 
 						</div>
 						
-						<div class="animated fadeInUp cowboyInfo info" style="">
+						<div class="animated fadeInUp soldierInfo info" style="">
 							<!-- <button class="close">X</button> -->
 							<div style="text-align: left">
-								<h3 class="projectTitle">Hangman
-								<button id="cowboyClose" class="btn btn-default close">X</button>
+								<h3 class="projectTitle">Puzzle
+								<button id="soldierClose" class="btn btn-default close">X</button>
 								</h3>
 								
 							</div>
@@ -300,7 +373,7 @@
 							<div class="projectInfo">
 								
 								<div class="projectText">
-									Test your knowledge of great Hollywood western actors!
+									Info about puzzle
 								</div>
 
 								<div>
@@ -327,26 +400,26 @@
 
 					<div class="col-md-4">
 
-						<div class="lion img">
+						<div class="amazon img">
 							
-							<!-- lion -->
-							<img class="icon" src="lion.png" />
+							
+							<img class="icon" src="amazon.png" />
 
-							<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-							<h3>Lion King Battle</h3>
+							
+							<h3>Node Amazon</h3>
 
 							<div>
-								<button id="lion" class="infoBtn btn btn-default">Info</button>
+								<button id="amazon" class="infoBtn btn btn-default">Info</button>
 							</div>
 
 						</div>
 
-						<div class="animated fadeInUp lionInfo info">
+						<div class="animated fadeInUp amazonInfo info">
 							<!-- <button class="close">X</button> -->
 
 							<div style="text-align: left">
-								<h3 class="projectTitle">Battle
-								<button id="lionClose" class="btn btn-default close">X</button>
+								<h3 class="projectTitle">Amazon
+								<button id="amazonClose" class="btn btn-default close">X</button>
 								</h3>
 								
 							</div>
@@ -354,7 +427,7 @@
 							<div class="projectInfo">
 								
 								<div class="projectText">
-									Choose from your favorite Lion King characters and do battle!
+									Info about amazon
 								</div>
 
 								<div>
@@ -379,27 +452,23 @@
 
 					<div class="col-md-4">
 
-						<div class="globe img"">
+						<div class="paper img"">
 							
-							<!-- globe -->
-
-							<img class="icon" src="worldwide.png" />
-
-							<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+							<img class="icon" src="paper.png" />
 							
-							<h3>World Trivia</h3>
+							<h3>Rock Paper Sissors...<br>with chat features</h3>
 							<div>
-								<button id="globe" class="infoBtn btn btn-default">Info</button>
+								<button id="paper" class="infoBtn btn btn-default">Info</button>
 							</div>
 
 						</div>
 
-						<div class="animated fadeInUp globeInfo info">
+						<div class="animated fadeInUp paperInfo info">
 							<!-- <button class="close">X</button> -->
 					
 							<div style="text-align: left">
-								<h3 class="projectTitle">Trivia
-								<button id="globeClose" class="btn btn-default close">X</button>
+								<h3 class="projectTitle">RPS
+								<button id="paperClose" class="btn btn-default close">X</button>
 								</h3>
 								
 							</div>
@@ -407,7 +476,160 @@
 							<div class="projectInfo">
 								
 								<div class="projectText">
-									A game of world trivia. Choose the best answer, but hurry before you run out of time! 
+									Info about RPS 
+								</div>
+
+								<div>
+									
+									<img class="techUsed" src="html.png">
+									<img class="techUsed" src="css.png">
+									<img class="techUsed" src="javascript.png">
+									<img class="techUsed" src="jquery.png">
+
+								</div>
+
+								<div>
+									<br>
+									<a href="">Site</a> | <a href="">Code</a>
+								</div>
+
+							</div>
+
+						</div>
+									
+					</div>
+				</div>
+	
+				<div class="row">
+					<div class="col-md-4">
+						<div class="liri img">
+							
+							<img class="icon" src="microphone.png" />
+				
+							<h3>Liri</h3>
+							<div>
+								<button id="liri" class="infoBtn btn btn-default">Info</button>
+							</div>
+
+						</div>
+						
+						<div class="animated fadeInUp liriInfo info" style="">
+							<!-- <button class="close">X</button> -->
+							<div style="text-align: left">
+								<h3 class="projectTitle">Liri
+								<button id="liriClose" class="btn btn-default close">X</button>
+								</h3>
+								
+							</div>
+							
+							<!-- <span class="projectTitle">Hangman of the Hollwood West</span> -->
+							<div class="projectInfo">
+								
+								<div class="projectText">
+									Info about liri
+								</div>
+
+								<div>
+									
+									<img class="techUsed" src="react.png">
+									<img class="techUsed" src="html.png">
+									<img class="techUsed" src="css.png">
+									<img class="techUsed" src="javascript.png">
+
+								</div>
+
+								<div>
+									<br>
+									<a href="">Site</a> | <a href="">Code</a>
+								</div>
+
+							</div>
+
+						</div>
+							
+						<!-- </div> -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="lion img">
+							
+							
+							<img class="icon" src="lion.png" />
+
+							<h3>Lion King Battle!</h3>
+
+							<div>
+								<button id="lion" class="infoBtn btn btn-default">Info</button>
+							</div>
+
+						</div>
+
+						<div class="animated fadeInUp lionInfo info">
+							<!-- <button class="close">X</button> -->
+
+							<div style="text-align: left">
+								<h3 class="projectTitle">RPG
+								<button id="lionClose" class="btn btn-default close">X</button>
+								</h3>
+								
+							</div>
+
+							<div class="projectInfo">
+								
+								<div class="projectText">
+									info about rpg
+								</div>
+
+								<div>
+									
+									<img class="techUsed" src="html.png">
+									<img class="techUsed" src="css.png">
+									<img class="techUsed" src="javascript.png">
+									<img class="techUsed" src="jquery.png">
+
+								</div>
+
+								<div>
+									<br>
+									<a href="">Site</a> | <a href="">Code</a>
+								</div>
+
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="burger2 img"">
+							
+
+							<img class="icon" src="burger2.png" />
+							
+							<h3>Burger 2.0</h3>
+							<div>
+								<button id="burger2" class="infoBtn btn btn-default">Info</button>
+							</div>
+
+						</div>
+
+						<div class="animated fadeInUp burger2Info info">
+							<!-- <button class="close">X</button> -->
+					
+							<div style="text-align: left">
+								<h3 class="projectTitle">Burger
+								<button id="burger2Close" class="btn btn-default close">X</button>
+								</h3>
+								
+							</div>
+							
+							<div class="projectInfo">
+								
+								<div class="projectText">
+									info about burger 2.0 
 								</div>
 
 								<div>
@@ -432,38 +654,32 @@
 				</div>
 
 				<div class="row">
-
 					<div class="col-md-4">
-
-							<div class="soldier img"">
-								
-								<!-- globe -->
-
-								<img class="icon" src="soldier.png" />
-
-								<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/turkkub" title="turkkub">turkkub</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
-								
-								<h3>The Dirty Dozen Puzzle</h3>
-								<div>
-									<button id="soldier" class="infoBtn btn btn-default">Info</button>
-								</div>
-
+						<div class="soldier img">
+							
+							<img class="icon" src="soldier.png" />
+				
+							<h3>Dirty Dozen Puzzle</h3>
+							<div>
+								<button id="soldier" class="infoBtn btn btn-default">Info</button>
 							</div>
 
-							<div class="animated fadeInUp soldierInfo info">
+						</div>
+						
+						<div class="animated fadeInUp soldierInfo info" style="">
 							<!-- <button class="close">X</button> -->
-					
-								<div style="text-align: left">
+							<div style="text-align: left">
 								<h3 class="projectTitle">Puzzle
 								<button id="soldierClose" class="btn btn-default close">X</button>
 								</h3>
 								
-								</div>
+							</div>
 							
-								<div class="projectInfo">
+							<!-- <span class="projectTitle">Hangman of the Hollwood West</span> -->
+							<div class="projectInfo">
 								
 								<div class="projectText">
-									Let the cast of The Dirty Dozen put your memory to the test!
+									Let the cast of The Dirty Dozen put your memory to the test!!
 								</div>
 
 								<div>
@@ -472,7 +688,6 @@
 									<img class="techUsed" src="html.png">
 									<img class="techUsed" src="css.png">
 									<img class="techUsed" src="javascript.png">
-									
 
 								</div>
 
@@ -482,52 +697,287 @@
 								</div>
 
 							</div>
+
+						</div>
+							
+						<!-- </div> -->
+
 					</div>
 
+					<div class="col-md-4">
+
+						<div class="paper img">
+							
+							
+							<img class="icon" src="paper.png" />
+
+							<h3>Rock Paper Sissors</h3>
+
+							<div>
+								<button id="paper" class="infoBtn btn btn-default">Info</button>
+							</div>
+
+						</div>
+
+						<div class="animated fadeInUp paperInfo info">
+							<!-- <button class="close">X</button> -->
+
+							<div style="text-align: left">
+								<h3 class="projectTitle">RPS
+								<button id="paperClose" class="btn btn-default close">X</button>
+								</h3>
+								
+							</div>
+
+							<div class="projectInfo">
+								
+								<div class="projectText">
+									Rock Papaer Sissors with chat!
+								</div>
+
+								<div>
+									
+									<img class="techUsed" src="html.png">
+									<img class="techUsed" src="css.png">
+									<img class="techUsed" src="javascript.png">
+									<img class="techUsed" src="jquery.png">
+
+								</div>
+
+								<div>
+									<br>
+									<a href="">Site</a> | <a href="">Code</a>
+								</div>
+
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="spinach img"">
+							
+
+							<img class="icon" src="spinach.png" />
+							
+							<h3>Popeye dating app</h3>
+							<div>
+								<button id="spinach" class="infoBtn btn btn-default">Info</button>
+							</div>
+
+						</div>
+
+						<div class="animated fadeInUp spinachInfo info">
+							<!-- <button class="close">X</button> -->
+					
+							<div style="text-align: left">
+								<h3 class="projectTitle">Popeye
+								<button id="spinachClose" class="btn btn-default close">X</button>
+								</h3>
+								
+							</div>
+							
+							<div class="projectInfo">
+								
+								<div class="projectText">
+									See which Popeye the Sailor Man character your most combatable with! 
+								</div>
+
+								<div>
+									
+									<img class="techUsed" src="html.png">
+									<img class="techUsed" src="css.png">
+									<img class="techUsed" src="javascript.png">
+									<img class="techUsed" src="jquery.png">
+
+								</div>
+
+								<div>
+									<br>
+									<a href="">Site</a> | <a href="">Code</a>
+								</div>
+
+							</div>
+
+						</div>
+									
+					</div>
 				</div>
 
-			<!-- </div> -->
+				<div class="row">
+					<div class="col-md-4">
+						<div class="soldier img">
+							
+							<img class="icon" src="soldier.png" />
+				
+							<h3>Dirty Dozen Puzzle</h3>
+							<div>
+								<button id="soldier" class="infoBtn btn btn-default">Info</button>
+							</div>
+
+						</div>
+						
+						<div class="animated fadeInUp soldierInfo info" style="">
+							<!-- <button class="close">X</button> -->
+							<div style="text-align: left">
+								<h3 class="projectTitle">Puzzle
+								<button id="soldierClose" class="btn btn-default close">X</button>
+								</h3>
+								
+							</div>
+							
+							<!-- <span class="projectTitle">Hangman of the Hollwood West</span> -->
+							<div class="projectInfo">
+								
+								<div class="projectText">
+									Let the cast of The Dirty Dozen put your memory to the test!!
+								</div>
+
+								<div>
+									
+									<img class="techUsed" src="react.png">
+									<img class="techUsed" src="html.png">
+									<img class="techUsed" src="css.png">
+									<img class="techUsed" src="javascript.png">
+
+								</div>
+
+								<div>
+									<br>
+									<a href="">Site</a> | <a href="">Code</a>
+								</div>
+
+							</div>
+
+						</div>
+							
+						<!-- </div> -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="paper img">
+							
+							
+							<img class="icon" src="paper.png" />
+
+							<h3>Rock Paper Sissors</h3>
+
+							<div>
+								<button id="paper" class="infoBtn btn btn-default">Info</button>
+							</div>
+
+						</div>
+
+						<div class="animated fadeInUp paperInfo info">
+							<!-- <button class="close">X</button> -->
+
+							<div style="text-align: left">
+								<h3 class="projectTitle">RPS
+								<button id="paperClose" class="btn btn-default close">X</button>
+								</h3>
+								
+							</div>
+
+							<div class="projectInfo">
+								
+								<div class="projectText">
+									Rock Papaer Sissors with chat!
+								</div>
+
+								<div>
+									
+									<img class="techUsed" src="html.png">
+									<img class="techUsed" src="css.png">
+									<img class="techUsed" src="javascript.png">
+									<img class="techUsed" src="jquery.png">
+
+								</div>
+
+								<div>
+									<br>
+									<a href="">Site</a> | <a href="">Code</a>
+								</div>
+
+							</div>
+							
+						</div>
+						
+					</div>
+
+					<div class="col-md-4">
+
+						<div class="spinach img"">
+							
+
+							<img class="icon" src="spinach.png" />
+							
+							<h3>Popeye dating app</h3>
+							<div>
+								<button id="spinach" class="infoBtn btn btn-default">Info</button>
+							</div>
+
+						</div>
+
+						<div class="animated fadeInUp spinachInfo info">
+							<!-- <button class="close">X</button> -->
+					
+							<div style="text-align: left">
+								<h3 class="projectTitle">Popeye
+								<button id="spinachClose" class="btn btn-default close">X</button>
+								</h3>
+								
+							</div>
+							
+							<div class="projectInfo">
+								
+								<div class="projectText">
+									See which Popeye the Sailor Man character your most combatable with! 
+								</div>
+
+								<div>
+									
+									<img class="techUsed" src="html.png">
+									<img class="techUsed" src="css.png">
+									<img class="techUsed" src="javascript.png">
+									<img class="techUsed" src="jquery.png">
+
+								</div>
+
+								<div>
+									<br>
+									<a href="">Site</a> | <a href="">Code</a>
+								</div>
+
+							</div>
+
+						</div>
+									
+					</div>
+				</div>
+
+			</div>
 		
 		</div>
-</div>
+	
 		<!-- spinach -->
 
 		<!-- <img src="spinach.png">
 
-		<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
 
-		<div>
+
+		<!-- <div>
 			NOTES: add col-xs-12 to all columns. not touching width right now so should be reasonably responsive. make sure to remove "don't be scared" from about me, make it sound more experienced. get a better pic or remove it all together. make "heavy hitters" section full page, then section according genre (each full page). make final "goodbye page" with something funny and a way to contact. personal logo? clean up indentation issue in world trivia column
-		</div>
-
-		<!-- </div>
-
-				<div class="col-md-4">
-
-					<div class="rock img">
-						
-						
-						<img class="icon" src="paper(1).png" />
-
-						<div>Icons made by <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-
-						<div><button id="rock" class="infoBtn btn btn-default">Info</button></div>
-
-					</div>
-
-					<div class="animated fadeInUp rockInfo info">
-						
-						<button id="rockClose" class="btn btn-default close">X</button>
-						<br>Some info about rock paper sissors game
-						
-					</div>
-					
-				</div>
-
 		</div> -->
+
+
 		
-	
-	</div>
-</body>
+
+		
+
+	</body>
 </html>
