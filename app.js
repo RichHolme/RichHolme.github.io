@@ -4,7 +4,7 @@ $(document).ready(function(){
 	});
 
 	$(".info").hide();
-	$(".mainProjectInfo").hide();
+	// $(".mainProjectInfo").hide();
 	$(".slick-arrow").hide();
 	$(".slick-next").hide()
 
