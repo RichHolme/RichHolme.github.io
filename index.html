@@ -26,16 +26,26 @@
 
 	<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 
 
 </head>
 <body>
 	<style type="text/css">
+
+	body{
+		/*font-weight: 700;*/
+		/*font-size: 15px;*/
+		/*letter-spacing: 2px;*/
+		font-family: 'Open Sans', sans-serif;
+	}
 		.icon{
 			height: 100px;
 			width: 100px;
@@ -158,7 +168,7 @@
 		#profileImg{
 			border-radius: 50%;
 			height: 300px;
-			box-shadow: 1px 1px 8px 1px #888888;
+			/*box-shadow: 1px 1px 8px 1px #888888;*/
 		}
 
 		.skills{
@@ -172,7 +182,94 @@
 
 		.bio{
 			margin-top: 15%;
+			/*border: 1px solid black;*/
 		}
+
+		.navbar{
+			font-size: 25px;
+			padding: 10px 130px 10px 130px;
+			background: white;
+			border-bottom: none !important;
+		}
+
+		.navbar-scroll{
+			box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
+			0 1px 5px 0 rgba(0,0,0,0.12), 
+			0 3px 1px -2px rgba(0,0,0,.12);
+		}
+
+		#name{
+			/*color: #d19b26 !important;*/
+			font-weight: 700;
+			font-size: 30px;
+		}
+
+		.infoBtn{
+		  position: relative;
+		  //display:block;
+		  height: 35px;
+		  width: 90px;
+		  margin: 10px 7px;
+		  padding: 5px 5px;
+		  /*font-weight: 700;*/
+		  font-size: 15px;
+		  /*letter-spacing: 2px;*/
+		  color: #383736;
+		  border: 1px #383736 solid;
+		  border-radius: 4px;
+		  text-transform: uppercase;
+		  outline: 0;
+		  overflow:hidden;
+		  background: none;
+		  z-index: 1;
+		  cursor: pointer;
+		  transition:         0.08s ease-in;
+		  -o-transition:      0.08s ease-in;
+		  -ms-transition:     0.08s ease-in;
+		  -moz-transition:    0.08s ease-in;
+		  -webkit-transition: 0.08s ease-in;
+		 }
+
+		.infoBtn{
+		  -webkit-transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+		}
+
+		.infoBtn:before{
+		  position:absolute;  
+		  content:"";
+		  background: url(https://f.cl.ly/items/3H3A0D1N281a2T280F3o/heist.svg) no-repeat center center;
+		  width:100%;
+		  height:100%;
+		  top:0;
+		  left:0;
+		  z-index:-1;
+		  opacity:0;
+		  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+		}
+
+		.infoBtn:after {
+		  content: "";
+		  position: absolute;
+		  background: #d19b26;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  top: 100%;
+		  z-index: -2;
+		  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+		}
+		.infoBtn:hover{
+		  color:white;
+		  border: 0px #d19b26 solid;
+		}
+		.infoBtn:hover:before {
+		  opacity: .8;
+		}
+		.infoBtn:hover:after {
+		  top: 0;
+		}
+
+		
 
 	</style>
 
@@ -186,7 +283,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <span class="navbar-brand" href="#">Richard Holme</span>
+		      <span id="name" class="navbar-brand" href="#">Richard Holme</span>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -194,9 +291,9 @@
 		      
 		      
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Link</a></li>
-		        <li><a href="#">Link</a></li>
-		        <li><a href="#">Link</a></li>
+		        <li><a href="#"><span class="fa fa-envelope"></span></a></li>
+		        <li><a href="#"><span class="fa fa-github"></span></a></li>
+		        <li><a href="#"><span class="fa fa-file"></span></a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -210,13 +307,13 @@
 			
 			<div class="row profileClass">
 				<div class="col-md-6 col-xs-12">
-					<img id="profileImg" data-aos="fade-down" data-aos-duration="1500" src='profile.jpg'>
+					<img id="profileImg" data-aos="zoom-in" data-aos-duration="1500" src='profile.jpg'>
 				</div>
 
 				<div class="col-md-6 col-xs-12">
 					<div>
 	                        
-	                    <div class="bio" data-aos="fade-down" data-aos-duration="1500">
+	                    <div class="bio" data-aos=zoom-in data-aos-duration="1500">
 	                       	<h1 id="aboutMe">Who's This Guy?</h1>
 	                        Thanks for visiting my site! My name is Ricard Holme and I'm a web developer living in Raleigh NC. I graduated from the Code Bootcamp at UNC Chapel Hill in July 2018. I am currently pursuing an Associate of Engineering at Wake Tech. My goal is to earn a Bachelor of Computer Science at NC State. I'm always seeking an opportunity to gain experience and learn something new. 
 	                    </div>
@@ -399,14 +496,14 @@
 
 				<div class="row">
 
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 						<div class="soldier img">
 							
 							<img class="icon" src="soldier.png" />
 							
 							<h3>The Dirty Dozen Puzzle</h3>
 							<div>
-								<button id="soldier" data-aos="fade-up" data-aos-duration="1500" class="infoBtn btn btn-default">Info</button>
+								<button id="soldier" class="infoBtn btn btn-default">Info</button>
 							</div>
 
 						</div>
@@ -449,7 +546,7 @@
 
 					</div>
 
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 
 						<div class="amazon img">
 							
@@ -501,7 +598,7 @@
 						
 					</div>
 
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 
 						<div class="paper img"">
 							
@@ -552,7 +649,7 @@
 				</div>
 	
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 						<div class="liri img">
 							
 							<img class="icon" src="microphone.png" />
@@ -602,7 +699,7 @@
 
 					</div>
 
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 
 						<div class="lion img">
 							
@@ -653,7 +750,7 @@
 						
 					</div>
 
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 
 						<div class="burger2 img"">
 							
@@ -705,23 +802,23 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-4">
-						<div class="soldier img">
+					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
+						<div class="popeye img">
 							
-							<img class="icon" src="soldier.png" />
+							<img class="icon" src="spinach.png" />
 				
-							<h3>Dirty Dozen Puzzle</h3>
+							<h3>Popeye Friend Finder</h3>
 							<div>
-								<button id="soldier" class="infoBtn btn btn-default">Info</button>
+								<button id="popeye" class="infoBtn btn btn-default">Info</button>
 							</div>
 
 						</div>
 						
-						<div class="animated fadeInUp soldierInfo info" style="">
+						<div class="animated fadeInUp popeyeInfo info" style="">
 							<!-- <button class="close">X</button> -->
 							<div style="text-align: left">
-								<h3 class="projectTitle">Puzzle
-								<button id="soldierClose" class="btn btn-default close">X</button>
+								<h3 class="projectTitle">Popeye
+								<button id="popeyeClose" class="btn btn-default close">X</button>
 								</h3>
 								
 							</div>
@@ -730,7 +827,7 @@
 							<div class="projectInfo">
 								
 								<div class="projectText">
-									Let the cast of The Dirty Dozen put your memory to the test!!
+									Info about friend finder
 								</div>
 
 								<div>
@@ -755,27 +852,27 @@
 
 					</div>
 
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 
-						<div class="paper img">
+						<div class="text img">
 							
 							
-							<img class="icon" src="paper.png" />
+							<img class="icon" src="text-lines.png" />
 
-							<h3>Rock Paper Sissors</h3>
+							<h3>Mongo Scraper</h3>
 
 							<div>
-								<button id="paper" class="infoBtn btn btn-default">Info</button>
+								<button id="text" class="infoBtn btn btn-default">Info</button>
 							</div>
 
 						</div>
 
-						<div class="animated fadeInUp paperInfo info">
+						<div class="animated fadeInUp textInfo info">
 							<!-- <button class="close">X</button> -->
 
 							<div style="text-align: left">
-								<h3 class="projectTitle">RPS
-								<button id="paperClose" class="btn btn-default close">X</button>
+								<h3 class="projectTitle">Scraper
+								<button id="textClose" class="btn btn-default close">X</button>
 								</h3>
 								
 							</div>
@@ -783,7 +880,7 @@
 							<div class="projectInfo">
 								
 								<div class="projectText">
-									Rock Papaer Sissors with chat!
+									Info about mongo scraper
 								</div>
 
 								<div>
@@ -806,26 +903,26 @@
 						
 					</div>
 
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 
-						<div class="spinach img"">
+						<div class="globe img"">
 							
 
-							<img class="icon" src="spinach.png" />
+							<img class="icon" src="worldwide.png" />
 							
-							<h3>Popeye dating app</h3>
+							<h3>World Trivia</h3>
 							<div>
-								<button id="spinach" class="infoBtn btn btn-default">Info</button>
+								<button id="globe" class="infoBtn btn btn-default">Info</button>
 							</div>
 
 						</div>
 
-						<div class="animated fadeInUp spinachInfo info">
+						<div class="animated fadeInUp globeInfo info">
 							<!-- <button class="close">X</button> -->
 					
 							<div style="text-align: left">
-								<h3 class="projectTitle">Popeye
-								<button id="spinachClose" class="btn btn-default close">X</button>
+								<h3 class="projectTitle">Trivia
+								<button id="globeClose" class="btn btn-default close">X</button>
 								</h3>
 								
 							</div>
@@ -833,7 +930,7 @@
 							<div class="projectInfo">
 								
 								<div class="projectText">
-									See which Popeye the Sailor Man character your most combatable with! 
+									Info about world trivia
 								</div>
 
 								<div>
@@ -858,23 +955,23 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-4">
-						<div class="soldier img">
+					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
+						<div class="burger img">
 							
-							<img class="icon" src="soldier.png" />
+							<img class="icon" src="burger.png" />
 				
-							<h3>Dirty Dozen Puzzle</h3>
+							<h3>Original Burger</h3>
 							<div>
-								<button id="soldier" class="infoBtn btn btn-default">Info</button>
+								<button id="burger" class="infoBtn btn btn-default">Info</button>
 							</div>
 
 						</div>
 						
-						<div class="animated fadeInUp soldierInfo info" style="">
+						<div class="animated fadeInUp burgerInfo info" style="">
 							<!-- <button class="close">X</button> -->
 							<div style="text-align: left">
-								<h3 class="projectTitle">Puzzle
-								<button id="soldierClose" class="btn btn-default close">X</button>
+								<h3 class="projectTitle">Burger
+								<button id="burgerClose" class="btn btn-default close">X</button>
 								</h3>
 								
 							</div>
@@ -883,7 +980,8 @@
 							<div class="projectInfo">
 								
 								<div class="projectText">
-									Let the cast of The Dirty Dozen put your memory to the test!!
+									Info about the original burger
+
 								</div>
 
 								<div>
@@ -908,27 +1006,27 @@
 
 					</div>
 
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 
-						<div class="paper img">
+						<div class="giph img">
 							
 							
-							<img class="icon" src="paper.png" />
+							<img class="icon" src="giphy.png" />
 
-							<h3>Rock Paper Sissors</h3>
+							<h3>Giphy Page</h3>
 
 							<div>
-								<button id="paper" class="infoBtn btn btn-default">Info</button>
+								<button id="giph" class="infoBtn btn btn-default">Info</button>
 							</div>
 
 						</div>
 
-						<div class="animated fadeInUp paperInfo info">
+						<div class="animated fadeInUp giphInfo info">
 							<!-- <button class="close">X</button> -->
 
 							<div style="text-align: left">
-								<h3 class="projectTitle">RPS
-								<button id="paperClose" class="btn btn-default close">X</button>
+								<h3 class="projectTitle">Giphy
+								<button id="giphClose" class="btn btn-default close">X</button>
 								</h3>
 								
 							</div>
@@ -936,7 +1034,7 @@
 							<div class="projectInfo">
 								
 								<div class="projectText">
-									Rock Papaer Sissors with chat!
+									Info about giphy page
 								</div>
 
 								<div>
@@ -959,26 +1057,26 @@
 						
 					</div>
 
-					<div class="col-md-4">
+					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 
-						<div class="spinach img"">
+						<div class="cowboy img"">
 							
 
-							<img class="icon" src="spinach.png" />
+							<img class="icon" src="cowboy-hat.png" />
 							
-							<h3>Popeye dating app</h3>
+							<h3>Wild West Hangman</h3>
 							<div>
-								<button id="spinach" class="infoBtn btn btn-default">Info</button>
+								<button id="cowboy" class="infoBtn btn btn-default">Info</button>
 							</div>
 
 						</div>
 
-						<div class="animated fadeInUp spinachInfo info">
+						<div class="animated fadeInUp cowboyInfo info">
 							<!-- <button class="close">X</button> -->
 					
 							<div style="text-align: left">
-								<h3 class="projectTitle">Popeye
-								<button id="spinachClose" class="btn btn-default close">X</button>
+								<h3 class="projectTitle">Hangman
+								<button id="cowboyClose" class="btn btn-default close">X</button>
 								</h3>
 								
 							</div>
@@ -986,7 +1084,7 @@
 							<div class="projectInfo">
 								
 								<div class="projectText">
-									See which Popeye the Sailor Man character your most combatable with! 
+									Info about hangman
 								</div>
 
 								<div>
