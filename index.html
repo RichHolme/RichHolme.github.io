@@ -23,6 +23,14 @@
 	<!-- slick js -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
 
+	<!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 
 </head>
 <body>
@@ -106,7 +114,7 @@
 		#hitters,
 		#profile{
 			height: 100vh;
-			border-bottom: 1px solid black;
+			/*border-bottom: 1px solid black;*/
 		}
 
 		/*#profile{
@@ -148,34 +156,68 @@
 
 		#profileImg{
 			border-radius: 50%;
-			height: 200px;
+			height: 300px;
+			box-shadow: 1px 1px 8px 1px #888888;
+		}
+
+		.skills{
+			margin-top: 10%;
+			margin-bottom: 2.5%;
+		}
+
+		.profileClass{
+			margin-top: 10%;
+		}
+
+		.bio{
+			margin-top: 15%;
 		}
 
 	</style>
+	<!-- style="background-color: white;" -->
+	<nav class="navbar navbar-default navbar-fixed-top" >
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Richard Holme</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#"><span class="fa fa-envelope"></span></a></li>
+	        <li><a href="#"><span class="fa fa-github"></span></a></li>
+	        <li><a href="#"><span class="fa fa-file"></span></a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
 	
 	<div class="container">
 
+
 		<div id="profile" class="row">
 			
-			<div class="row">
+			<div class="row profileClass">
 				<div class="col-md-6 col-xs-12">
-					<img id="profileImg" src='profile.png'>
+					<img id="profileImg" data-aos="fade-down" data-aos-duration="1500" src='profile.jpg'>
 				</div>
 
 				<div class="col-md-6 col-xs-12">
 					<div>
 	                        
-	                    <div className="">
+	                    <div class="bio" data-aos="fade-down" data-aos-duration="1500">
 	                       	<h1 id="aboutMe">Who's This Guy?</h1>
-	                        Thanks for visiting my site! My name is Ricard Holme and I'm a web developer living in Raleigh NC. I enjoy a challenge and seek perfection in what I do. Prior to my "techiness", I was employed by the Inter-Faith Food Shuttle and served my community with some really "cool" people. I graduated from the Code Bootcamp at UNC Chapel Hill in July 2018. I am currently pursuing an Associate of Engineering at Wake Tech. My goal is to earn a Bachelor of Computer Science at NC State. I'm always seeking an opportunity to gain experience and learn something new. 
+	                        Thanks for visiting my site! My name is Ricard Holme and I'm a web developer living in Raleigh NC. I graduated from the Code Bootcamp at UNC Chapel Hill in July 2018. I am currently pursuing an Associate of Engineering at Wake Tech. My goal is to earn a Bachelor of Computer Science at NC State. I'm always seeking an opportunity to gain experience and learn something new. 
 	                    </div>
 	                </div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div>
-                    <h1 className="skills">Got Skills?</h1>
+				<div class="" data-aos="fade-up" data-aos-duration="1500">
+                    <h1 class="skills">Got Skills?</h1>
                     <div>
                                 <!-- Node.js, Express, JavaScript, .NET, jQuery, React, GIT, GitHub, MongoDB, MySQL, 
                                 Sequelize, Firebase, HTML, CSS, Bootstrap, Materialize, Chai, Mocha, REST, APIs, JSON, AJAX, 
@@ -205,10 +247,10 @@
 
 		<div id="hitters" class="row">
 			<div class="row">
-				<h1 class="rowLabel">The Heavy Hitters</h1>
+				<h1 class="rowLabel" data-aos="fade-down" data-aos-duration="1000">The Heavy Hitters</h1>
 			</div>
 			
-			<div class=" col-md-6 col-xs-12">
+			<div class=" col-md-6 col-xs-12" data-aos="fade-right" data-aos-duration="1500">
 				<!-- <img class="mainProjectPic" src="http://simpsonswiki.com/w/images/0/01/Springfield_Library.png"> -->
 				
 				<!-- <div class="col-md-4"> -->
@@ -272,7 +314,7 @@
 
 			</div>
 
-			<div class=" col-md-6 col-xs-12">
+			<div class=" col-md-6 col-xs-12" data-aos="fade-left" data-aos-duration="1500">
 				<!-- <img class="mainProjectPic" src="http://simpsonswiki.com/w/images/0/01/Springfield_Library.png"> -->
 				
 				<!-- <div class="col-md-4"> -->
@@ -342,7 +384,7 @@
 
 				<div class="row">
 
-					<h1 class="rowLabel">Apps Built</h1>
+					<h1 class="rowLabel" data-aos="fade-down" data-aos-duration="1000">Apps Built</h1>
 					
 				</div>
 
@@ -355,7 +397,7 @@
 							
 							<h3>The Dirty Dozen Puzzle</h3>
 							<div>
-								<button id="soldier" class="infoBtn btn btn-default">Info</button>
+								<button id="soldier" data-aos="fade-up" data-aos-duration="1500" class="infoBtn btn btn-default">Info</button>
 							</div>
 
 						</div>

@@ -1,6 +1,9 @@
 $(document).ready(function(){
+	AOS.init();
 	$(".info").hide();
 	$(".mainProjectInfo").hide();
+	$(".slick-arrow").hide();
+	$(".slick-next").hide()
 
 	$(".infoBtn").on('click', function(){
 		event.preventDefault();
@@ -23,6 +26,9 @@ $(document).ready(function(){
 	  slidesToShow: 10,
 	  slidesToScroll: 1,
 	  autoplay: true,
-	  autoplaySpeed: 1500,
+	  autoplaySpeed: 1250,
+	  arrows: false
 	});
+
+
 })
