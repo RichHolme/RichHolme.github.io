@@ -6,6 +6,16 @@
 		/*letter-spacing: 2px;*/
 		font-family: 'Open Sans', sans-serif;
 	}
+
+	a{
+		color: black !important;
+		text-decoration: none !important;
+	}
+
+	a:hover{
+		color: #d19b26 !important;
+		text-decoration: none !important;
+	}
 		.icon{
 			height: 100px;
 			width: 100px;
@@ -82,7 +92,7 @@
 			margin-bottom: 20px;
 		}
 
-		#hitters,
+		/*#hitters,*/
 		#profile{
 			height: 100vh;
 			/*border-bottom: 1px solid black;*/
@@ -127,13 +137,24 @@
 
 		#profileImg{
 			border-radius: 50%;
-			height: 300px;
-			/*box-shadow: 1px 1px 8px 1px #888888;*/
+			height: 150px;
+			margin-top: 5%;
+			margin-bottom: 5%;
+			box-shadow: 1px 1px 8px 1px #888888;
 		}
 
 		.skills{
-			margin-top: 10%;
+			/*margin-top: 5%;*/
 			/*margin-bottom: 2.5%;*/
+			margin-left: 6% !important;
+			
+		}
+
+		.skillsRow{
+			position: absolute;
+			width: 75%;
+			bottom: 12.5%;
+			/*left: 12.5% !important;*/
 		}
 
 		.profileClass{
@@ -143,12 +164,13 @@
 		.bio{
 			margin-top: 15%;
 			/*border: 1px solid black;*/
+			font-size: 20px;
 		}
 
 		.navbar{
 			font-size: 25px;
 			padding: 10px 130px 10px 130px;
-			background: white;
+			background: white !important;
 			border-bottom: none !important;
 		}
 
@@ -219,7 +241,7 @@
 		  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
 		}
 		.infoBtn:hover{
-		  color:white;
+		  color:white !important;
 		  border: 0px #d19b26 solid;
 		}
 		.infoBtn:hover:before {
@@ -229,4 +251,42 @@
 		  top: 0;
 		}
 
-	
+#homeImg{
+	height: 400px;
+	width: 75%;
+	position: absolute;
+	left: 12.5%;
+	/*z-index: -1;*/
+	box-shadow: 1px 1px 8px 1px #888888;
+}
+
+#title{
+	position: relative;
+	top: 0;
+	color: white;
+	/*z-index: 1;*/
+}
+
+#developer{
+	margin-top: 5%;
+	font-size: 70px;
+}
+
+.titleElem{
+	font-size: 40px;
+}
+
+.page-footer{
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.12);
+			
+}
+
+#aboutMe{
+	text-align: left;
+	margin-top: 5%;
+	/*margin-bottom: 5%;*/
+} 
+
+p{
+	line-height: 10px;
+}
