@@ -2,13 +2,14 @@
 <html>
 <head>
 	<title>Images</title>
+	<link rel="stylesheet" type="text/css" href="assets/style/style.css">
 	<link rel="stylesheet"
 	  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
 	  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
 	  crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	 <!-- <script type="text/javascript"></script> -->
-	<script src="app.js"></script>
+	<script src="assets/js/app.js"></script>
 	  <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
 
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css"> -->
@@ -38,240 +39,6 @@
 
 </head>
 <body>
-	<style type="text/css">
-
-	body{
-		/*font-weight: 700;*/
-		/*font-size: 15px;*/
-		/*letter-spacing: 2px;*/
-		font-family: 'Open Sans', sans-serif;
-	}
-		.icon{
-			height: 100px;
-			width: 100px;
-			/*border: 1px solid black;*/
-		}
-
-		.img{
-			height: 300px;
-			/*width: 200px;*/
-			/*box-shadow: 1px 1px 10px 2px #696767;*/
-		}
-
-		.info{
-			height: 250px;
-			/*width: 200px;*/
-			/*border: 1px solid black;*/
-			/*box-shadow: 1px 1px 1px 1px #888888;*/
-			margin: 10px;
-			/*padding: 10px;*/
-			padding: 25px;
-			padding-top: 0px;
-			/*padding-left: 25px;*/
-			/*line-height: 100px !important;*/
-		}
-
-		.mainProjectInfo{
-			height: 500px;
-			/*width: 200px;*/
-			/*border: 1px solid black;*/
-			/*box-shadow: 1px 1px 1px 1px #888888;*/
-			margin: 10px;
-			/*padding: 10px;*/
-			padding: 25px;
-			padding-top: 0px;
-		}
-
-		.close{
-			/*position: absolute;
-			top: 0px;*/
-			/*left: 0px;*/
-			/*float: right;*/
-
-		}
-
-		.row{
-			text-align: center;
-		}
-
-		.techIcon{
-			height: 30px;
-			width: 30px;
-		}
-
-		.projectTitle{
-			/*font-size: 20px;*/
-			/*position: absolute;
-			top: 0px;*/
-			/*float: left;*/
-		}
-
-		.projectInfo{
-			text-align: left;
-			clear: both;
-			font-size: 17px;
-		}
-
-		.techUsed{
-			height: 50px;
-			width: 50px;
-		}
-
-		.projectText{
-			margin-top: 20px;
-			margin-bottom: 20px;
-		}
-
-		#hitters,
-		#profile{
-			height: 100vh;
-			/*border-bottom: 1px solid black;*/
-		}
-
-		/*#profile{
-			background-image: url("hello.png");
-			background-repeat: no-repeat;
-		}*/
-
-		.bigProject{
-			height: 275px;
-			width: 505px;
-			/*border-radius: 25%;*/
-			z-index: -1;
-			position: absolute;
-			margin-top: 22px;
-			margin-left: 22px;
-		}
-
-		.rowLabel{
-			margin-top: 35px;
-			margin-bottom: 70px;
-		}
-
-		.desktop{
-			height: 425px;
-			width: 550px;
-			z-index: 1;
-			position: relative;
-			top: 0;
-		}
-
-		.tablet{
-			margin-top: 50px;
-			height: 325px;
-			width: 550px;
-			z-index: 1;
-			position: relative;
-			top: 0;
-		}
-
-		#profileImg{
-			border-radius: 50%;
-			height: 300px;
-			/*box-shadow: 1px 1px 8px 1px #888888;*/
-		}
-
-		.skills{
-			margin-top: 10%;
-			/*margin-bottom: 2.5%;*/
-		}
-
-		.profileClass{
-			margin-top: 10%;
-		}
-
-		.bio{
-			margin-top: 15%;
-			/*border: 1px solid black;*/
-		}
-
-		.navbar{
-			font-size: 25px;
-			padding: 10px 130px 10px 130px;
-			background: white;
-			border-bottom: none !important;
-		}
-
-		.navbar-scroll{
-			box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
-			0 1px 5px 0 rgba(0,0,0,0.12), 
-			0 3px 1px -2px rgba(0,0,0,.12);
-		}
-
-		#name{
-			/*color: #d19b26 !important;*/
-			font-weight: 700;
-			font-size: 30px;
-		}
-
-		.infoBtn{
-		  position: relative;
-		  //display:block;
-		  height: 35px;
-		  width: 90px;
-		  margin: 10px 7px;
-		  padding: 5px 5px;
-		  /*font-weight: 700;*/
-		  font-size: 15px;
-		  /*letter-spacing: 2px;*/
-		  color: #383736;
-		  border: 1px #383736 solid;
-		  border-radius: 4px;
-		  text-transform: uppercase;
-		  outline: 0;
-		  overflow:hidden;
-		  background: none;
-		  z-index: 1;
-		  cursor: pointer;
-		  transition:         0.08s ease-in;
-		  -o-transition:      0.08s ease-in;
-		  -ms-transition:     0.08s ease-in;
-		  -moz-transition:    0.08s ease-in;
-		  -webkit-transition: 0.08s ease-in;
-		 }
-
-		.infoBtn{
-		  -webkit-transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
-		}
-
-		.infoBtn:before{
-		  position:absolute;  
-		  content:"";
-		  background: url(https://f.cl.ly/items/3H3A0D1N281a2T280F3o/heist.svg) no-repeat center center;
-		  width:100%;
-		  height:100%;
-		  top:0;
-		  left:0;
-		  z-index:-1;
-		  opacity:0;
-		  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
-		}
-
-		.infoBtn:after {
-		  content: "";
-		  position: absolute;
-		  background: #d19b26;
-		  bottom: 0;
-		  left: 0;
-		  right: 0;
-		  top: 100%;
-		  z-index: -2;
-		  -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
-		}
-		.infoBtn:hover{
-		  color:white;
-		  border: 0px #d19b26 solid;
-		}
-		.infoBtn:hover:before {
-		  opacity: .8;
-		}
-		.infoBtn:hover:after {
-		  top: 0;
-		}
-
-		
-
-	</style>
 
 	<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
@@ -307,14 +74,14 @@
 			
 			<div class="row profileClass">
 				<div class="col-md-6 col-xs-12">
-					<img id="profileImg" data-aos="zoom-in" data-aos-duration="1500" src='profile.jpg'>
+					<img id="profileImg" data-aos="zoom-in" data-aos-duration="1500" src='assets/images/profile.jpg'>
 				</div>
 
 				<div class="col-md-6 col-xs-12">
 					<div>
 	                        
 	                    <div class="bio" data-aos=zoom-in data-aos-duration="1500">
-	                       	<h1 id="aboutMe">Who's This Guy?</h1>
+	                       	<!-- <h1 id="aboutMe">Who's This Guy?</h1> -->
 	                        Thanks for visiting my site! My name is Ricard Holme and I'm a web developer living in Raleigh NC. I graduated from the Code Bootcamp at UNC Chapel Hill in July 2018. I am currently pursuing an Associate of Engineering at Wake Tech. My goal is to earn a Bachelor of Computer Science at NC State. I'm always seeking an opportunity to gain experience and learn something new. 
 	                    </div>
 	                </div>
@@ -330,19 +97,19 @@
                                 CLI, OOP  -->
 
                         <div class="slick autoplay skills">
-						  <div><img class="techUsed" src="three.png"></div>
-						  <div><img class="techUsed" src="jquery.png"></div>
-						  <div><img class="techUsed" src="bootstrap.png"></div>
-						  <div><img class="techUsed" src="ajax.png"></div>
-						  <div><img class="techUsed" src="firebase.png"></div>
-						  <div><img class="techUsed" src="node.png"></div>
-						  <div><img class="techUsed" src="express.png"></div>
-						  <div><img class="techUsed" src="react.png"></div>
-						  <div><img class="techUsed" src="git.png"></div>
-						  <div><img class="techUsed" src="github.png"></div>
-						  <div><img class="techUsed" src="mongo.png"></div>
-						  <div><img class="techUsed" src="mysql.png"></div>
-						  <div><img class="techUsed" src="material.png"></div>
+						  <div><img class="techUsed" src="assets/images/three.png"></div>
+						  <div><img class="techUsed" src="assets/images/jquery.png"></div>
+						  <div><img class="techUsed" src="assets/images/bootstrap.png"></div>
+						  <div><img class="techUsed" src="assets/images/ajax.png"></div>
+						  <div><img class="techUsed" src="assets/images/firebase.png"></div>
+						  <div><img class="techUsed" src="assets/images/node.png"></div>
+						  <div><img class="techUsed" src="assets/images/express.png"></div>
+						  <div><img class="techUsed" src="assets/images/react.png"></div>
+						  <div><img class="techUsed" src="assets/images/git.png"></div>
+						  <div><img class="techUsed" src="assets/images/github.png"></div>
+						  <div><img class="techUsed" src="assets/images/mongo.png"></div>
+						  <div><img class="techUsed" src="assets/images/mysql.png"></div>
+						  <div><img class="techUsed" src="assets/images/material.png"></div>
 						  
 						</div>
                     </div>
@@ -360,9 +127,9 @@
 				
 					<div class="movie">
 						
-						<img class="bigProject" src="./movie.png" />
+						<img class="bigProject" src="assets/images/movie.png" />
 
-						<img class="desktop" src="desktop.png">
+						<img class="desktop" src="assets/images/desktop.png">
 					
 
 					</div>
@@ -393,11 +160,11 @@
 
 							<div>
 								
-								<img class="techUsed" src="three.png">
-								<img class="techUsed" src="jquery.png">
-								<img class="techUsed" src="bootstrap.png">
-								<img class="techUsed" src="ajax.png">
-								<img class="techUsed" src="firebase.png">
+								<img class="techUsed" src="assets/images/three.png">
+								<img class="techUsed" src="assets/images/jquery.png">
+								<img class="techUsed" src="assets/images/bootstrap.png">
+								<img class="techUsed" src="assets/images/ajax.png">
+								<img class="techUsed" src="assets/images/firebase.png">
 
 							</div>
 
@@ -426,9 +193,9 @@
 					<div class="movie">
 						<!-- cowboy -->
 						<!-- <img class="bigProject" src="http://simpsonswiki.com/w/images/0/01/Springfield_Library.png" /> -->
-						<img class="bigProject" src="./movie.png" />
+						<img class="bigProject" src="assets/images/movie.png" />
 
-						<img class="desktop" src="desktop.png">
+						<img class="desktop" src="assets/images/desktop.png">
 						<!-- <h3>Wild West Hangman</h3> -->
 						<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 						<h3>To Read or Not to Read?</h3>
@@ -460,11 +227,11 @@
 
 							<div>
 								
-								<img class="techUsed" src="three.png">
-								<img class="techUsed" src="jquery.png">
-								<img class="techUsed" src="bootstrap.png">
-								<img class="techUsed" src="ajax.png">
-								<img class="techUsed" src="firebase.png">
+								<img class="techUsed" src="assets/images/three.png">
+								<img class="techUsed" src="assets/images/jquery.png">
+								<img class="techUsed" src="assets/images/bootstrap.png">
+								<img class="techUsed" src="assets/images/ajax.png">
+								<img class="techUsed" src="assets/images/firebase.png">
 
 							</div>
 
@@ -490,9 +257,9 @@
 					<div class="dog">
 						<!-- cowboy -->
 						<!-- <img class="bigProject" src="https://media.giphy.com/media/NmGbJwLl7Y4lG/giphy.gif" /> -->
-						<img class="bigProject" src="dog.png" />
+						<img class="bigProject" src="assets/images/dog.png" />
 
-						<img class="desktop" src="desktop.png">
+						<img class="desktop" src="assets/images/desktop.png">
 						<!-- <h3>Wild West Hangman</h3> -->
 						<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 						<h3>FaceBark</h3>
@@ -522,11 +289,11 @@
 
 							<div>
 								
-								<img class="techUsed" src="three.png">
-								<img class="techUsed" src="jquery.png">
-								<img class="techUsed" src="bootstrap.png">
-								<img class="techUsed" src="ajax.png">
-								<img class="techUsed" src="firebase.png">
+								<img class="techUsed" src="assets/images/three.png">
+								<img class="techUsed" src="assets/images/jquery.png">
+								<img class="techUsed" src="assets/images/bootstrap.png">
+								<img class="techUsed" src="assets/images/ajax.png">
+								<img class="techUsed" src="assets/images/firebase.png">
 
 							</div>
 
@@ -562,7 +329,7 @@
 					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 						<div class="soldier img">
 							
-							<img class="icon" src="soldier.png" />
+							<img class="icon" src="assets/images/soldier.png" />
 							
 							<h3>The Dirty Dozen Puzzle</h3>
 							<div>
@@ -589,10 +356,10 @@
 
 								<div>
 									
-									<img class="techUsed" src="html.png">
-									<img class="techUsed" src="css.png">
-									<img class="techUsed" src="javascript.png">
-									<img class="techUsed" src="jquery.png">
+									<img class="techUsed" src="assets/images/html.png">
+									<img class="techUsed" src="assets/images/css.png">
+									<img class="techUsed" src="assets/images/javascript.png">
+									<img class="techUsed" src="assets/images/jquery.png">
 
 								</div>
 
@@ -614,7 +381,7 @@
 						<div class="amazon img">
 							
 							
-							<img class="icon" src="amazon.png" />
+							<img class="icon" src="assets/images/amazon.png" />
 
 							
 							<h3>Node Amazon</h3>
@@ -643,10 +410,10 @@
 
 								<div>
 									
-									<img class="techUsed" src="html.png">
-									<img class="techUsed" src="css.png">
-									<img class="techUsed" src="javascript.png">
-									<img class="techUsed" src="jquery.png">
+									<img class="techUsed" src="assets/images/html.png">
+									<img class="techUsed" src="assets/images/css.png">
+									<img class="techUsed" src="assets/images/javascript.png">
+									<img class="techUsed" src="assets/images/jquery.png">
 
 								</div>
 
@@ -665,7 +432,7 @@
 
 						<div class="paper img"">
 							
-							<img class="icon" src="paper.png" />
+							<img class="icon" src="assets/images/paper.png" />
 							
 							<h3>Rock Paper Sissors...<br>with chat features</h3>
 							<div>
@@ -692,10 +459,10 @@
 
 								<div>
 									
-									<img class="techUsed" src="html.png">
-									<img class="techUsed" src="css.png">
-									<img class="techUsed" src="javascript.png">
-									<img class="techUsed" src="jquery.png">
+									<img class="techUsed" src="assets/images/html.png">
+									<img class="techUsed" src="assets/images/css.png">
+									<img class="techUsed" src="assets/images/javascript.png">
+									<img class="techUsed" src="assets/images/jquery.png">
 
 								</div>
 
@@ -715,7 +482,7 @@
 					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 						<div class="liri img">
 							
-							<img class="icon" src="microphone.png" />
+							<img class="icon" src="assets/images/microphone.png" />
 				
 							<h3>Liri</h3>
 							<div>
@@ -767,7 +534,7 @@
 						<div class="lion img">
 							
 							
-							<img class="icon" src="lion.png" />
+							<img class="icon" src="assets/images/lion.png" />
 
 							<h3>Lion King Battle!</h3>
 
@@ -818,7 +585,7 @@
 						<div class="burger2 img"">
 							
 
-							<img class="icon" src="burger2.png" />
+							<img class="icon" src="assets/images/burger2.png" />
 							
 							<h3>Burger 2.0</h3>
 							<div>
@@ -868,7 +635,7 @@
 					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 						<div class="popeye img">
 							
-							<img class="icon" src="spinach.png" />
+							<img class="icon" src="assets/images/spinach.png" />
 				
 							<h3>Popeye Friend Finder</h3>
 							<div>
@@ -920,7 +687,7 @@
 						<div class="text img">
 							
 							
-							<img class="icon" src="text-lines.png" />
+							<img class="icon" src="assets/images/text-lines.png" />
 
 							<h3>Mongo Scraper</h3>
 
@@ -971,7 +738,7 @@
 						<div class="globe img"">
 							
 
-							<img class="icon" src="worldwide.png" />
+							<img class="icon" src="assets/images/worldwide.png" />
 							
 							<h3>World Trivia</h3>
 							<div>
@@ -1021,7 +788,7 @@
 					<div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
 						<div class="burger img">
 							
-							<img class="icon" src="burger.png" />
+							<img class="icon" src="assets/images/burger.png" />
 				
 							<h3>Original Burger</h3>
 							<div>
@@ -1074,7 +841,7 @@
 						<div class="giph img">
 							
 							
-							<img class="icon" src="giphy.png" />
+							<img class="icon" src="assets/images/giphy.png" />
 
 							<h3>Giphy Page</h3>
 
@@ -1125,7 +892,7 @@
 						<div class="cowboy img"">
 							
 
-							<img class="icon" src="cowboy-hat.png" />
+							<img class="icon" src="assets/images/cowboy-hat.png" />
 							
 							<h3>Wild West Hangman</h3>
 							<div>
