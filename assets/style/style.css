@@ -311,3 +311,20 @@ p{
 	line-height: 10px;
 }
 
+#email,
+#message{
+	border-top: none !important;
+	border-right: none !important;
+	border-left: none !important;
+	box-shadow: none !important;
+}
+
+#email{
+	width: 150px;
+}
+
+#message{
+	width: 300px;
+	/*height: 300px;*/
+}
+
