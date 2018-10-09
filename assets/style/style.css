@@ -95,6 +95,7 @@
 		/*#hitters,*/
 		#profile{
 			height: 100vh;
+			background-image: url("assets/images/home.jpg");
 			/*border-bottom: 1px solid black;*/
 		}
 
@@ -135,19 +136,30 @@
 			top: 0;
 		}
 
-		#profileImg{
+		#brand{
 			border-radius: 50%;
 			height: 150px;
 			margin-top: 5%;
 			margin-bottom: 5%;
-			box-shadow: 1px 1px 8px 1px #888888;
+			/*box-shadow: 1px 1px 8px 1px #888888;*/
+		}
+
+		#brandNav{
+			border-radius: 50%;
+			height: 40px;
+			margin-top: -5%;
+			margin-left: -5%;
+			margin-right: 5%;
+			/*margin-left: 2%;*/
+			/*margin-bottom: 5%;*/
+			/*box-shadow: 1px 1px 8px 1px #888888;*/
 		}
 
 		#tempProfileImg{
 			border-radius: 50%;
 			height: 250px;
 			margin-top: 2.5%;
-			/*margin-bottom: 5%;*/
+			/*margin-bottom: 5%;
 			/*box-shadow: 1px 1px 8px 1px #888888;*/
 		}
 
@@ -298,3 +310,4 @@
 p{
 	line-height: 10px;
 }
+
