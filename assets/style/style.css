@@ -96,7 +96,7 @@
 		#profile{
 			height: 100vh;
 			/*background-image: url("assets/images/home.jpg");*/
-			border-bottom: 1px solid black;
+			/*border-bottom: 1px solid black;*/
 		}
 
 		/*#profile{
@@ -141,6 +141,15 @@
 			height: 150px;
 			margin-top: 5%;
 			margin-bottom: 5%;
+			/*box-shadow: 1px 1px 8px 1px #888888;*/
+		}
+
+		#pbrand{
+			border-radius: 50%;
+			height: 250px;
+			margin-top: 25%;
+
+			/*margin-bottom: 5%;*/
 			/*box-shadow: 1px 1px 8px 1px #888888;*/
 		}
 
@@ -279,7 +288,9 @@
 	position: absolute;
 	left: 12.5%;
 	/*z-index: -1;*/
-	/*box-shadow: 1px 1px 8px 1px #888888;*/
+	/*border: 2px solid black;*/
+	/*box-shadow: 1px 1px 3px 1px #888888;*/
+	/*box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 
 #title{
@@ -291,7 +302,8 @@
 
 #developer{
 	/*margin-top: 5%;*/
-	font-size: 45px;
+	font-size: 30px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .titleElem{
@@ -331,59 +343,24 @@ p{
 }
 
 #myName{
-	margin-top: 5%;
-	font-size: 100px;
+	margin-top: 10%;
+	font-size: 70px;
+	/*font-weight: bold; */
+	margin-left: 15%;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	float: left;
 }
 
 #myTitle{
-	font-size: 50px;
+	font-size: 35px;
 }
 
-
-/* Make the element pulse (grow large and small slowly) */
-
-    .arrow {
-        animation: pulsate 1.5s ease-out;
-        animation-iteration-count: infinite;
-        opacity: 1; 
-    }
-
-@-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+.titleFont{
+	/*font-family: 'Oswald', serif;*/
 }
 
-/* Make the element's opacity pulse*/
+#imgName{
+	float: left; 
+	margin-left: 10%;
 
-/*    .arrow {
-        animation: opacityPulse 1s ease-out;
-        animation-iteration-count: infinite;
-        opacity: 0; 
-    }
-
-@-webkit-keyframes opacityPulse {
-    0% {opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {opacity: 0.0;}
-}*/
-.arrow{
-	font-size: 30px !important;
-	color: #8f6f48;
-	color: linear-gradient(to right, #243443, #7f2a2f);
-}
-
-.myContainer{
-	text-align: center;
-	position: absolute;
-	bottom: 0;
-	right: 15%;
-	/*width: 20%;
-	margin-right: 40%;
-	margin-left: 40%;*/
-}
-
-.outsideContainer{
-	margin: auto;
-	/*margin-left: auto;*/
 }

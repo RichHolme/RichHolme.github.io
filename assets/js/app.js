@@ -11,6 +11,15 @@ $(document).ready(function(){
 	// $(window).on('scroll', function() {
 	//     $(".navbar").addClass("navbar-scroll");
 	// });
+	$('a.rps').click(function(e) {
+	    e.preventDefault();
+	    window.open('https://richholme.github.io/RPS-Game/');
+	    window.open('https://richholme.github.io/RPS-Game/');
+	});
+
+	$('a').click(function(e) {
+	    // e.preventDefault();
+	});
 
 	function removeNavShadow() {
 	  var scroll = $(window).scrollTop();
