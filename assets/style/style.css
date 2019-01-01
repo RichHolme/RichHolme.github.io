@@ -1,5 +1,33 @@
 @import "compass/css3";
 
+#intro{
+	font-size: 3rem;
+	text-align: left;
+}
+
+#gif{
+	border-radius: 50%;
+	height: 400px;
+	width: 400px;
+}
+
+#arrow{
+	/*display: block;*/
+	/*padding-top: 5%;*/
+	margin-right: 2%;
+	/*font-weight: 2000;*/
+}
+
+#introRow{
+	margin-top: 2%;
+	/*font-weight: bold;*/
+}
+
+#projectScroll{
+	font-weight: 600;
+	cursor: pointer;
+}
+
 	body{
 		/*font-weight: 700;*/
 		/*font-size: 15px;*/
@@ -322,7 +350,7 @@
 } 
 
 p{
-	line-height: 10px;
+	/*line-height: 10px;*/
 }
 
 #email,

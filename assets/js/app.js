@@ -58,5 +58,11 @@ $(document).ready(function(){
 	  arrows: false
 	});
 
+	$("#projectScroll").on('click', function(){
+		$('html,body').animate({
+          scrollTop: $('#apps').offset().top
+        }, 1000);
+	})
+
 
 })
