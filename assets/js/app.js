@@ -60,9 +60,18 @@ $(document).ready(function(){
 
 	$("#projectScroll").on('click', function(){
 		$('html,body').animate({
-          scrollTop: $('#apps').offset().top
+          scrollTop: $('#apps').offset().top-100
         }, 1000);
 	})
+
+	$("#contactScroll").on('click', function(){
+		event.preventDefault();
+		$('html,body').animate({
+          scrollTop: $('#contact').position().top-100
+        }, 1000);
+	})
+
+	
 
 
 })

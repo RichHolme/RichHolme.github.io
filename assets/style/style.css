@@ -1,16 +1,36 @@
 @import "compass/css3";
 
+#apps{
+	margin-bottom: 10%
+}
+
+#contactSection{
+	margin-bottom: 10%;
+}
+
+.contactInfo{
+	font-size: 18px;
+	margin-top: 18%;
+	margin-bottom: 18%;
+
+}
+
+#contactInfoSection{
+	margin-top: 5%;
+	padding-left: 3%;
+}
+
 .contact-form {
   width: 100%;
 
   /* Box-model */
-  padding: 45px 10px 25px 31px;
+  /*padding: 45px 10px 25px 31px;*/
 
   /* Positioning */
-  margin-top: 30px;
+  /*margin-top: 30px;*/
 
   /* Visual */
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 
 .contact-form-header,
@@ -28,8 +48,8 @@
 #contactMsg{
 	font-size: 20px;
 	margin-bottom: 5%;
-	padding-right: 5%;
-	padding-left: 5%;
+	/*padding-right: 5%;
+	padding-left: 5%;*/
 }
 
 #name_input,
@@ -285,7 +305,7 @@ input{
 
 		#brandNav{
 			border-radius: 50%;
-			height: 55px;
+			height: 65px;
 			margin-top: -20%;
 			/*margin-left: -5%;
 			margin-right: 5%;*/
@@ -328,7 +348,7 @@ input{
 		}
 
 		.navbar{
-			font-size: 25px;
+			font-size: 35px;
 			padding: 10px 130px 10px 130px;
 			background: white !important;
 			border-bottom: none !important;
