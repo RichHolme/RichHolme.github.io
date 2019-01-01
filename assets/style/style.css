@@ -1,5 +1,9 @@
 @import "compass/css3";
 
+.footer-copyright{
+	font-size: 16px;
+}
+
 #apps{
 	margin-bottom: 10%
 }
@@ -288,7 +292,7 @@ input{
 
 		#brand{
 			border-radius: 50%;
-			height: 150px;
+			height: 250px;
 			margin-top: 5%;
 			margin-bottom: 5%;
 			/*box-shadow: 1px 1px 8px 1px #888888;*/
@@ -461,13 +465,18 @@ input{
 }
 
 .page-footer{
-	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.12);
+	/*box-shadow: 0 1px 5px 0 rgba(0,0,0,0.12);*/
+
+	/*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14)*/
+	box-shadow: 0 1px 10px 0 rgba(0,0,0,.9)
+	/*box-shadow: 0 3px 1px -2px rgba(0,0,0,.12);*/
 			
 }
 
 #aboutMe{
 	text-align: left;
 	margin-top: 5%;
+	font-size: 18px;
 	/*margin-bottom: 5%;*/
 } 
 
