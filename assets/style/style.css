@@ -1,5 +1,107 @@
 @import "compass/css3";
 
+.contact-form {
+  width: 100%;
+
+  /* Box-model */
+  padding: 45px 10px 25px 31px;
+
+  /* Positioning */
+  margin-top: 30px;
+
+  /* Visual */
+  background-color: #fff;
+}
+
+.contact-form-header,
+.port-header {
+  /* Positioning */
+  margin-bottom: 3%;
+  /*font-family: Georgia, Times, "Times New Roman", serif;*/
+
+  /* Typography */
+  font-size: 32px;
+  /*font-weight: bold;*/
+  /*color: #4aaaa5;*/
+}
+
+#contactMsg{
+	font-size: 20px;
+	margin-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+#name_input,
+#mail_input,{
+ border-color: white !important;
+/* border-right: none !important;
+ border-left: none !important;*/
+/* border-width: 0px, 0px, 0px, 0px !important;
+border-top-width: 0px !important;
+border-right-width: 0px !important;
+border-bottom-width: 0px !important;
+border-left-width: 0px !important;*/
+outline: none !important;
+}
+
+input{
+	outline: none !important;
+}
+
+#name_input,
+#mail_input,
+#msg {
+  width: 95%;
+
+  /* Box-model */
+  height: 30px;
+
+  /* Positioning */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  /*border-color: white !important;*/
+}
+
+#msg {
+  /* Box-model */
+  height: 150px;
+
+  /* Visual */
+  border-color: #bbc;
+}
+
+.label-name,
+.label-msg,
+.label-mail {
+  /* Typography */
+  font-size: 17px;
+  /*color: #bbc;*/
+  /*text-align: left;*/
+}
+
+.contact-hr {
+  margin-bottom: 30px;
+}
+
+.submit-btn {
+  /* Box-model */
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: lighter;
+
+  /* Typography */
+  color: #fff;
+
+  /* Visual */
+  background-color: #4aaaa5;
+  border: 0;
+}
+
+
 #intro{
 	font-size: 3rem;
 	text-align: left;
