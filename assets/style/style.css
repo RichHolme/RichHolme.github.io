@@ -1,5 +1,18 @@
 @import "compass/css3";
 
+.navLink:hover{
+	color: #039be5 !important;
+	/*text-decoration: none !important;*/
+}
+
+.blueA{
+	color: #039be5 !important;
+}
+
+.greenA{
+	color: #8bc34a !important;
+}
+
 .footer-copyright{
 	font-size: 16px;
 }
@@ -169,7 +182,7 @@ a{
 }
 
 a:hover{
-	color: #039be5 !important;
+	/*color: #039be5 !important;*/
 	text-decoration: none !important;
 }
 .icon{
@@ -387,8 +400,8 @@ a:hover{
   /*font-weight: 700;*/
   font-size: 15px;
   /*letter-spacing: 2px;*/
-  color: #039be5 !important;
-  border: 2px #039be5 solid !important;
+  /*color: #039be5 !important;*/
+  /*border: 2px #039be5 solid !important;*/
   border-radius: 4px;
   text-transform: uppercase;
   outline: 0;
