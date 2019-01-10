@@ -877,7 +877,7 @@
 
 				<div class="col-md-9">
 
-				    <form class="contact-form">
+				    <form class="contact-form" action="https://formspree.io/rchrdholme@gmail.com" method="POST">
 					    <h1 class="contact-form-header">Contact Me</h1>
 					    <p id="contactMsg">Have any questions? Please don't hesitate to get in touch. Use this form to send me an email or feel free to give me a call.</p>
 			
@@ -893,7 +893,7 @@
 					  		<div class="col-md-6">
 					      		<div style="text-align: left;" class="form-group">
 						        	<label class="label-mail" for="mail">E-mail</label>
-						        	<input type="email" id="mail_input" name="user_mail" />
+						        	<input type="email" name="_replyto" id="mail_input" name="user_mail" />
 					        	</div>
 					      	</div>
 				      	</div>
@@ -902,9 +902,9 @@
 							<div class="col-md-12">
 								<div style="text-align: left;" class="form-group">
 						        	<label class="label-msg" for="msg">Message</label><br />
-						        	<textarea id="msg" name="user_message_input" cols=600></textarea>
+						        	<textarea id="msg" name="user_message_input" cols=600 type="text" name="name"></textarea>
 						      	</div>
-						      	<button class="submit-btn infoBtn btn btn-default">Submit</button>
+						      	<button type="submit" value="Send" class="submit-btn infoBtn btn btn-default">Submit</button>
 							</div>
 							
 						</div>
