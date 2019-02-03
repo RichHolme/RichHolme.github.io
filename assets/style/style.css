@@ -391,6 +391,7 @@ a:hover{
 	font-size: 30px;
 }
 
+.submitBtn,
 .infoBtn{
   position: relative;
   /*//display:block;*/
@@ -417,10 +418,12 @@ a:hover{
   -webkit-transition: 0.08s ease-in;
  }
 
+.submitBtn,
 .infoBtn{
   -webkit-transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
 }
 
+.submitBtn:before,
 .infoBtn:before{
   position:absolute;  
   content:"";
@@ -434,6 +437,7 @@ a:hover{
   -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
 }
 
+.submitBtn:after,
 .infoBtn:after {
   content: "";
   position: absolute;
@@ -446,13 +450,19 @@ a:hover{
   z-index: -2;
   -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
 }
+
+.submitBtn:hover,
 .infoBtn:hover{
   color:white !important;
   border: 0px #039be5 solid;
 }
+
+.submitBtn:hover:before,
 .infoBtn:hover:before {
   opacity: .8;
 }
+
+.submitBtn:hover:after,
 .infoBtn:hover:after {
   top: 0;
 }
