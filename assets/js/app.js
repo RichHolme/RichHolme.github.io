@@ -52,11 +52,6 @@ $(document).ready(function(){
 		$("." + id).show();
 	})
 
-	$('.autoplay').slick({
-	  slidesToShow: 13,
-	  slidesToScroll: 1,
-	  arrows: false
-	});
 
 	$("#projectScroll").on('click', function(){
 		$('html,body').animate({

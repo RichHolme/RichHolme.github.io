@@ -1,12 +1,14 @@
-@import "compass/css3";
-
 #name:hover{
 	cursor: pointer;
 }
 
+#name{
+	font-weight: 700;
+	font-size: 30px;
+}
+
 .navLink:hover{
 	color: #039be5 !important;
-	/*text-decoration: none !important;*/
 }
 
 .blueA{
@@ -34,7 +36,6 @@
 	font-size: 18px;
 	margin-top: 18%;
 	margin-bottom: 18%;
-
 }
 
 #contactInfoSection{
@@ -44,47 +45,22 @@
 
 .contact-form {
   width: 100%;
-
-  /* Box-model */
-  /*padding: 45px 10px 25px 31px;*/
-
-  /* Positioning */
-  /*margin-top: 30px;*/
-
-  /* Visual */
-  /*background-color: #fff;*/
 }
 
-.contact-form-header,
-.port-header {
-  /* Positioning */
+.contact-form-header {
   margin-bottom: 3%;
-  /*font-family: Georgia, Times, "Times New Roman", serif;*/
-
-  /* Typography */
   font-size: 32px;
-  /*font-weight: bold;*/
-  /*color: #4aaaa5;*/
 }
 
 #contactMsg{
 	font-size: 20px;
 	margin-bottom: 8%;
-	/*padding-right: 5%;
-	padding-left: 5%;*/
 }
 
 #name_input,
 #mail_input,{
- border-color: white !important;
-/* border-right: none !important;
- border-left: none !important;*/
-/* border-width: 0px, 0px, 0px, 0px !important;
-border-top-width: 0px !important;
-border-right-width: 0px !important;
-border-bottom-width: 0px !important;
-border-left-width: 0px !important;*/
-outline: none !important;
+ 	border-color: white !important;
+	outline: none !important;
 }
 
 input{
@@ -95,50 +71,30 @@ input{
 #mail_input,
 #msg {
   width: 95%;
-
-  /* Box-model */
   height: 30px;
-
-  /* Positioning */
   margin-top: 20px;
   margin-bottom: 15px;
   border-top: none !important;
   border-right: none !important;
   border-left: none !important;
-  /*border-color: white !important;*/
 }
 
 #msg {
-  /* Box-model */
   height: 150px;
-
-  /* Visual */
   border-color: #bbc;
 }
 
 .label-name,
 .label-msg,
 .label-mail {
-  /* Typography */
   font-size: 17px;
-  /*color: #bbc;*/
-  /*text-align: left;*/
-}
-
-.contact-hr {
-  margin-bottom: 30px;
 }
 
 .submit-btn {
-  /* Box-model */
   padding: 15px 30px;
   font-size: 16px;
   font-weight: lighter;
-
-  /* Typography */
   color: #fff;
-
-  /* Visual */
   background-color: #4aaaa5;
   border: 0;
 }
@@ -154,19 +110,10 @@ input{
 	border-radius: 50%;
 	height: 400px;
 	width: 400px;
-	/*box-shadow: 0 1px 10px 0 rgba(0,0,0,.7)*/
-}
-
-#arrow{
-	/*display: block;*/
-	/*padding-top: 5%;*/
-	margin-right: 2%;
-	/*font-weight: 2000;*/
 }
 
 #introRow{
 	margin-top: 2%;
-	/*font-weight: bold;*/
 }
 
 #projectScroll{
@@ -175,9 +122,6 @@ input{
 }
 
 body{
-	/*font-weight: 700;*/
-	/*font-size: 15px;*/
-	/*letter-spacing: 2px;*/
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -187,68 +131,25 @@ a{
 }
 
 a:hover{
-	/*color: #039be5 !important;*/
 	text-decoration: none !important;
 }
 .icon{
 	height: 100px;
 	width: 100px;
-	/*border: 1px solid black;*/
 }
 
 .img{
 	height: 300px;
-	/*width: 200px;*/
-	/*box-shadow: 1px 1px 10px 2px #696767;*/
 }
 
 .info{
 	height: 250px;
-	/*width: 200px;*/
-	/*border: 1px solid black;*/
-	/*box-shadow: 1px 1px 1px 1px #888888;*/
 	margin: 10px;
-	/*padding: 10px;*/
-	/*padding: 25px;*/
 	padding-top: 0px;
-	/*padding-left: 25px;*/
-	/*line-height: 100px !important;*/
-
-}
-
-.mainProjectInfo{
-	height: 500px;
-	/*width: 200px;*/
-	/*border: 1px solid black;*/
-	/*box-shadow: 1px 1px 1px 1px #888888;*/
-	margin: 10px;
-	/*padding: 10px;*/
-	padding: 25px;
-	padding-top: 0px;
-}
-
-.close{
-	/*position: absolute;
-	top: 0px;*/
-	/*left: 0px;*/
-	/*float: right;*/
-
 }
 
 .row{
 	text-align: center;
-}
-
-.techIcon{
-	height: 30px;
-	width: 30px;
-}
-
-.projectTitle{
-	/*font-size: 20px;*/
-	/*position: absolute;
-	top: 0px;*/
-	/*float: left;*/
 }
 
 .projectInfo{
@@ -257,40 +158,12 @@ a:hover{
 	font-size: 17px;
 }
 
-.techUsed{
-	height: 50px;
-	width: 50px;
-}
-
-.projectText{
-	/*margin-top: 20px;
-	margin-bottom: 20px;*/
-}
-
 .skillText{
 	margin-top: 20px;
 }
 
-/*#hitters,*/
 #profile{
 	height: 100vh;
-	/*background-image: url("assets/images/home.jpg");*/
-	/*border-bottom: 1px solid black;*/
-}
-
-/*#profile{
-	background-image: url("hello.png");
-	background-repeat: no-repeat;
-}*/
-
-.bigProject{
-	height: 275px;
-	width: 505px;
-	/*border-radius: 25%;*/
-	z-index: -1;
-	position: absolute;
-	margin-top: 22px;
-	margin-left: 22px;
 }
 
 .rowLabel{
@@ -298,82 +171,14 @@ a:hover{
 	margin-bottom: 70px;
 }
 
-.desktop{
-	height: 425px;
-	width: 550px;
-	z-index: 1;
-	position: relative;
-	top: 0;
-}
-
-.tablet{
-	margin-top: 50px;
-	height: 325px;
-	width: 550px;
-	z-index: 1;
-	position: relative;
-	top: 0;
-}
-
-#brand{
-	border-radius: 50%;
-	height: 250px;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	/*box-shadow: 1px 1px 8px 1px #888888;*/
-}
-
-#pbrand{
-	border-radius: 50%;
-	height: 250px;
-	margin-top: 25%;
-
-	/*margin-bottom: 5%;*/
-	/*box-shadow: 1px 1px 8px 1px #888888;*/
-}
-
 #brandNav{
 	border-radius: 50%;
 	height: 65px;
 	margin-top: -20%;
-	/*margin-left: -5%;
-	margin-right: 5%;*/
-	/*margin-left: 2%;*/
-	/*margin-bottom: 5%;*/
-	/*box-shadow: 1px 1px 8px 1px #888888;*/
-}
-
-#tempProfileImg{
-	border-radius: 50%;
-	height: 250px;
-	margin-top: 2.5%;
-	/*margin-bottom: 5%;
-	box-shadow: 1px 1px 8px 1px #888888;*/
-}
-
-.skills{
-	/*margin-top: 5%;
-	/*margin-bottom: 2.5%;*/
-	margin-left: 6% !important;
-	
-}
-
-.skillsRow{
-	/*position: absolute;
-	width: 75%;
-	bottom: 12.5%;*/
-	margin-top: 10%;
-	/*left: 12.5% !important;*/
 }
 
 .profileClass{
 	margin-top: 15%;
-}
-
-.bio{
-	margin-top: 15%;
-	/*border: 1px solid black;*/
-	font-size: 20px;
 }
 
 .navbar{
@@ -389,25 +194,14 @@ a:hover{
 	0 3px 1px -2px rgba(0,0,0,.12);
 }
 
-#name{
-	/*color: #d19b26 !important;*/
-	font-weight: 700;
-	font-size: 30px;
-}
-
 .submitBtn,
 .infoBtn{
   position: relative;
-  /*//display:block;*/
   height: 35px;
   width: 90px;
   margin: 10px 7px;
   padding: 5px 5px;
-  /*font-weight: 700;*/
   font-size: 15px;
-  /*letter-spacing: 2px;*/
-  /*color: #039be5 !important;*/
-  /*border: 2px #039be5 solid !important;*/
   border-radius: 4px;
   text-transform: uppercase;
   outline: 0;
@@ -446,7 +240,6 @@ a:hover{
   content: "";
   position: absolute;
   background: #039be5;
-  /*background: linear-gradient(to right, #81282e, #591934);*/
   bottom: 0;
   left: 0;
   right: 0;
@@ -471,52 +264,8 @@ a:hover{
   top: 0;
 }
 
-#homeImg{
-	height: 400px;
-	width: 75%;
-	position: absolute;
-	left: 12.5%;
-	/*z-index: -1;*/
-	/*border: 2px solid black;*/
-	/*box-shadow: 1px 1px 3px 1px #888888;*/
-	/*box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
-}
-
-#title{
-	position: relative;
-	top: 0;
-	color: white;
-	/*z-index: 1;*/
-}
-
-#developer{
-	/*margin-top: 5%;*/
-	font-size: 30px;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.titleElem{
-	font-size: 40px;
-}
-
 .page-footer{
-	/*box-shadow: 0 1px 5px 0 rgba(0,0,0,0.12);*/
-
-	/*box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14)*/
 	box-shadow: 0 .7px 8px 0 rgba(0,0,0,.9)
-	/*box-shadow: 0 3px 1px -2px rgba(0,0,0,.12);*/
-			
-}
-
-#aboutMe{
-	text-align: left;
-	margin-top: 5%;
-	font-size: 18px;
-	/*margin-bottom: 5%;*/
-} 
-
-p{
-	/*line-height: 10px;*/
 }
 
 #email,
@@ -527,36 +276,9 @@ p{
 	box-shadow: none !important;
 }
 
-#email{
-	width: 150px;
-}
-
 #message{
 	width: 300px;
 	/*height: 300px;*/
-}
-
-#myName{
-	margin-top: 10%;
-	font-size: 70px;
-	/*font-weight: bold; */
-	margin-left: 15%;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	float: left;
-}
-
-#myTitle{
-	font-size: 35px;
-}
-
-.titleFont{
-	/*font-family: 'Oswald', serif;*/
-}
-
-#imgName{
-	float: left; 
-	margin-left: 10%;
-
 }
 
 @media only screen and (max-width: 1025px){
