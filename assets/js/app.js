@@ -71,4 +71,11 @@ $(document).ready(function(){
         }, 1000);
 	})
 
+	$("#name").on('click', function(){
+		event.preventDefault();
+		$('html,body').animate({
+          scrollTop: $('#profile').position().top-100
+        }, 1000);
+	})
+
 })
