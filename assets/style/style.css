@@ -413,3 +413,38 @@ a:hover{
 	}
 
 }
+
+@media only screen and (max-width: 320px){
+	/*make this just a litle smaller to fit 411*/
+	body{
+		max-width: 320px !important;
+	}
+
+
+
+    #brandNav{
+		height: 0px !important;
+    }
+
+    #gif{
+    	height: 190px;
+    	width: 190px;
+    }
+
+	#introRow{
+		margin-top: 10% !important;
+		padding-right: 12% !important;
+		padding-left: 12% !important;
+	}
+
+	#intro{
+		font-size: 2rem !important;
+	}
+
+	#name{
+		padding-right: 0px;
+	}
+
+}
+
+
