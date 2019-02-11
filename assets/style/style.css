@@ -121,6 +121,10 @@ input{
 	cursor: pointer;
 }
 
+#projectScroll:hover{
+	color: #039be5;
+}
+
 body{
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
@@ -197,6 +201,8 @@ a:hover{
 
 .submitBtn,
 .infoBtn{
+  border: solid 2px #039be5 !important;
+  color: #039be5 !important;
   position: relative;
   height: 35px;
   width: 90px;
