@@ -284,6 +284,7 @@ a:hover{
 
 @media only screen and (max-width: 1024px){
 	body{
+		/*overflow-x: none;*/
 		max-width: 1024px !important;
 	}
 
@@ -385,7 +386,7 @@ a:hover{
 }
 
 @media only screen and (max-width: 385px){
-	/*make this just a litle smaller to fit 411*/
+
 	body{
 		max-width: 375px !important;
 	}
@@ -415,7 +416,7 @@ a:hover{
 }
 
 @media only screen and (max-width: 320px){
-	/*make this just a litle smaller to fit 411*/
+
 	body{
 		max-width: 320px !important;
 	}
@@ -435,14 +436,6 @@ a:hover{
 		margin-top: 10% !important;
 		padding-right: 12% !important;
 		padding-left: 12% !important;
-	}
-
-	#intro{
-		font-size: 2rem !important;
-	}
-
-	#name{
-		padding-right: 0px;
 	}
 
 }
