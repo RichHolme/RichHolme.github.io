@@ -103,7 +103,7 @@ input{
 #intro{
 	font-size: 3rem;
 	text-align: left;
-	margin-top: 5%;
+	margin-top: 3.8%;
 }
 
 #gif{
@@ -302,6 +302,10 @@ a:hover{
 	#introRow{
 		margin-top: 25% !important;
 	}
+
+	#intro{
+		margin-top: 1.5rem;
+	}
 }
 
 @media only screen and (max-width: 768px){
@@ -315,6 +319,7 @@ a:hover{
 	}
 
 	#intro{
+		margin-top: 3rem;
 		text-align: center;
 	}
 
