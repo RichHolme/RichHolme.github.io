@@ -4,13 +4,9 @@ $(document).ready(function(){
 	});
 
 	$(".info").hide();
-	// $(".mainProjectInfo").hide();
 	$(".slick-arrow").hide();
 	$(".slick-next").hide()
 
-	// $(window).on('scroll', function() {
-	//     $(".navbar").addClass("navbar-scroll");
-	// });
 	$('a.rps').click(function(e) {
 	    e.preventDefault();
 	    window.open('https://richholme.github.io/RPS-Game/');
