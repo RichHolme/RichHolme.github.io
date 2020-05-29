@@ -17,7 +17,9 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.1/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -28,7 +30,7 @@
 
 </head>
 <body>
-
+	
 	<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -48,9 +50,15 @@
 		      
 		      <ul class="nav navbar-nav navbar-right">
 		      	<!-- <li><a href="#"><span class="fa fa-wrench fa-3x"></span></a></li> -->
-		        <li><a class="navLink" id="contactScroll" href="#"><span class="fa fa-envelope"></span></a></li>
-		        <li><a class="navLink" href="https://github.com/RichHolme" target="_blank"><span class="fa fa-github"></span></a></li>
-		        <li><a class="navLink" href="./assets/resume/Richard_Holme_Resume.pdf" download><span class="fa fa-file"></span></a></li>
+		       <!--  <li><a class="navLink" id="contactScroll" href="#" data-toggle="tooltip" title="Email"><span class="fa fa-envelope"></span></a></li> -->
+				<li><a class="navLink" id="about" href="#"><span class="">About</span></a></li>
+		        <li><a class="navLink" id="work" href="#"><span class="">Work</span></a></li>
+		        <li><a class="navLink" id="bootcamp" href="#"><span class="">Bootcamp</span></a></li>
+				<li><a class="navLink" href="./assets/resume/Richard_Holme_Resume.pdf" download><span class="">Resume</span></a></li> 
+
+		        <!-- <li><a class="navLink tooltip_pos" id="bootcampScroll" href="#" data-toggle="tooltip" title="Code Bootcamp"><span class="fas fa-campground"></span></a></li> -->
+		     <!--    <li><a class="navLink tooltip_pos" href="https://github.com/RichHolme" target="_blank" data-toggle="tooltip" title="My GitHub"><span class="fab fa-github"></span></a></li>
+		        <li><a class="navLink tooltip_pos" href="./assets/resume/Richard_Holme_Resume.pdf" download data-toggle="tooltip" title="My Resume"><span class="fa fa-file"></span></a></li> -->
 		        <!-- <li><a class="navLink" href="#"><span class="fa fa-file"></span></a></li> -->
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -60,7 +68,6 @@
 	
 	<div class="container">
 
-
 		<div id="profile" class="row">
 
 			<div class="row profileClass">
@@ -69,21 +76,88 @@
 					
 					<div id="introRow" class="row">
 
-						<div class="col-md-5 col-sm-12">
+						<!-- <div class="col-md-5 col-sm-12">
 							<img id="gif" src="assets/images/dev.gif">
-						</div>
+						</div> -->
 				   
-						<div class="col-md-7 col-sm-12" id="intro">
+						<div class="col-md-12 col-sm-12" id="intro">
 
 							<p>Hi, my name is Richard Holme. <br />
 
-							I'm a web developer from Raleigh NC. <br />
+							I graduated from The Coding Bootcamp at UNC in 2018.
 
-							This site showcases my work from The Coding Bootcamp at UNC. <br />
+							Most of my experience is around JavaScript, React.js, HTML and CSS. More recently I've had the opportunity to work with C in the embedded software arena. 
 
-							Scroll down or click <span id="projectScroll">here</span> to see my projects!</p>
+							I've also had some academic exposer to Python, Java and C#. 
+
+							This site is a way for me to keep my Web Dev skills intact while highlighting some my work. <br />
+
+							<!-- Click <span id="projectScroll">here</span> to see my projects!</p>
 							<br>
-							<p class="hidden-sm hidden-xs"><span id="arrow" class="fa fa-long-arrow-left"> </span> This is me in my natural habitat</p> 
+ -->							<!-- <p class="hidden-sm hidden-xs"><span id="arrow" class="fa fa-long-arrow-left"> </span> This is me in my natural habitat</p> --> 
+					
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+
+		<div id="mida_profile" class="row">
+
+			<div class="row mida_profileClass">
+
+				<div class="row"  data-aos="zoom-in" data-aos-duration="2500">
+					
+					<div id="mida_introRow" class="row">
+
+						<!-- <div class="col-md-5 col-sm-12">
+							<img id="gif" src="assets/images/dev.gif">
+						</div> -->
+						<div class="col-md-6 col-sm-12" id="mida_intro">
+
+							<div class="row parent">
+								<img id="work_pic" class="image1" src="assets/images/comp_screen.png">
+								<!-- <img id="" class="image2" src="assets/images/mida_1.png"> -->
+							</div>
+							<!-- <div class="row">
+								<img id="work_pic" src="assets/images/mida_3.png">
+							</div> -->
+					
+						</div>
+				   
+						<div class="col-md-6 col-sm-12" id="mida_intro">
+
+							<p>MIDA Medical</p>
+							<p>I was brought on by Cat to build an internal website for some local engineers. The site is built around 6 Cat API's and is built with JavaScript, React.js, HTML and CSS. When it launched I had a userbase of about 10 engineers. That userbase has grown to about 500+. After this I worked for a short time on displays; this mostly involved XML. You know the touch sreen displays that are in cars? Well, this is the same thing, except tougher and inside a huge piece of construction equipment. Currently, I'm working with embedded software. </p>
+							<!-- <p class="hidden-sm hidden-xs"><span id="arrow" class="fa fa-long-arrow-left"> </span> This is me in my natural habitat</p> --> 
+					
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+
+		<div id="cat_profile" class="row">
+
+			<div class="row cat_profileClass">
+
+				<div class="row"  data-aos="zoom-in" data-aos-duration="2500">
+					
+					<div id="cat_introRow" class="row">
+
+						<!-- <div class="col-md-5 col-sm-12">
+							<img id="gif" src="assets/images/dev.gif">
+						</div> -->
+				   
+						<div class="col-md-12 col-sm-12" id="cat_intro">
+
+							<p>Caterpillar Inc.</p>
+							<p>I was brought on by Cat to build an internal website for some local engineers. The site is built around 6 Cat API's and is built with JavaScript, React.js, HTML and CSS. When it launched I had a userbase of about 10 engineers. That userbase has grown to about 500+. After this I worked for a short time on displays; this mostly involved XML. You know the touch sreen displays that are in cars? Well, this is the same thing, except tougher and inside a huge piece of construction equipment. Currently, I'm working with embedded software. </p>
+							<!-- <p class="hidden-sm hidden-xs"><span id="arrow" class="fa fa-long-arrow-left"> </span> This is me in my natural habitat</p> --> 
 					
 						</div>
 					</div>
@@ -96,7 +170,7 @@
 		<div id="apps" class="row">
 
 				<div class="row">
-					<h1 class="rowLabel" data-aos="fade-down" data-aos-duration="1000">Apps Built</h1>	
+					<h1 class="rowLabel" data-aos="fade-down" data-aos-duration="1000">Bootcamp Stuff</h1>	
 				</div>
 
 				<!-- row 1 -->
@@ -869,7 +943,7 @@
 		
 		</div>
 		
-		<div id="contact">
+		<!-- <div id="contact">
 			<div id="contactSection" class="row">
 
 				<div class="col-md-9 col-sm-12">
@@ -911,7 +985,6 @@
 
 				</div>
 
-			     <!--Grid column-->
 		        <div id="contactInfoSection" class="col-md-3 col-sm-12">
 	
 		            <div class="contactInfo col-md-12 col-sm-4">
@@ -932,7 +1005,7 @@
 
 		        </div>
 
-		    </div>
+		    </div> -->
 		
 		</div>
 

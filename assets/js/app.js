@@ -1,4 +1,44 @@
 $(document).ready(function(){
+
+	$("#mida_profile").hide();
+	$("#cat_profile").hide();
+	$("#apps").hide();
+
+	$("#work").on("click",function(){
+		$("#mida_profile").show();
+		$("#cat_profile").show();
+		$("#apps").hide();
+		$("#profile").hide();
+	});
+
+	$("#about").on("click",function(){
+		$("#mida_profile").hide();
+		$("#cat_profile").hide();
+		$("#apps").hide();
+		$("#profile").show();
+	})
+
+	$("#bootcamp").on("click",function(){
+		$("#mida_profile").hide();
+		$("#cat_profile").hide();
+		$("#apps").show();
+		$("#profile").hide();
+	})
+
+	// adjust height on page load 
+	// let height = $( window ).height();
+	// height = height - $(".navbar").height();
+	// $("#mida_profile").height(height);
+	// $("#cat_profile").height(height);
+
+	//adjust height when screen resized 
+	// $( window ).resize(function() {
+	//  	let height = $( window ).height();
+	// 	height = height - $(".navbar").height();
+	// 	$("#mida_profile").height(height);
+	// 	$("#cat_profile").height(height);
+	// });
+
 	AOS.init({
 	  startEvent: 'load',
 	});
@@ -68,5 +108,48 @@ $(document).ready(function(){
           scrollTop: $('#profile').position().top-100
         }, 1000);
 	})
+
+	$("#midaScroll").on('click', function(){
+		event.preventDefault();
+		$('html,body').animate({
+          scrollTop: $('#mida_profile').position().top - $(".navbar").height()
+        }, 1000);
+	})
+
+	$("#catScroll").on('click', function(){
+		event.preventDefault();
+		$('html,body').animate({
+          scrollTop: $('#cat_profile').position().top - $(".navbar").height()
+        }, 1000);
+	})
+
+	$("#bootcampScroll").on('click', function(){
+		event.preventDefault();
+		$('html,body').animate({
+          scrollTop: $('#apps').position().top - $(".navbar").height()
+        }, 1000);
+	})
+
+	$("#midaScroll").mouseenter(function(){
+		console.log('showing')
+		$(this).tooltip({disabled: false, placement: "bottom"});
+	});
+
+	$("#midaScroll").mouseleave(function(){
+		console.log('hiding')
+		$(this).tooltip({disabled: false});
+	});
+	
+
+	// let height = $( window ).height();
+	// height = height - $(".navbar").height();
+	// $("#mida_profile").height(height);
+	// $("#cat_profile").height(height);
+// 	#mida_profile,
+// #cat_profile
+// {
+// 	height: 90vh;
+// 	border: 1px solid black;
+// }
 
 })

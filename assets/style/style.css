@@ -100,9 +100,11 @@ input{
 }
 
 
+#mida_intro,
+#cat_intro,
 #intro{
 	font-size: 3rem;
-	text-align: left;
+	text-align: center;
 	margin-top: 3.8%;
 }
 
@@ -112,6 +114,8 @@ input{
 	width: 400px;
 }
 
+#mida_introRow,
+#cat_introRow,
 #introRow{
 	margin-top: 2%;
 }
@@ -167,8 +171,18 @@ a:hover{
 	margin-top: 20px;
 }
 
+/*#mida_profile,
+#cat_profile
+{
+	height: 90vh;
+	border: 1px solid black;
+}*/
+
+#mida_profile,
+#cat_profile,
 #profile{
 	height: 100vh;
+	/*border: 1px solid black;*/
 }
 
 .rowLabel{
@@ -180,6 +194,11 @@ a:hover{
 	border-radius: 50%;
 	height: 65px;
 	margin-top: -20%;
+}
+
+.mida_profileClass,
+.cat_profileClass{
+	margin-top: 5%;
 }
 
 .profileClass{
@@ -288,6 +307,11 @@ a:hover{
 	/*height: 300px;*/
 }
 
+#work_pic{
+	height: 100%;
+	width: 100%;
+}
+
 @media only screen and (max-width: 1024px){
 	body{
 		/*overflow-x: none;*/
@@ -302,13 +326,35 @@ a:hover{
 	#introRow{
 		margin-top: 25% !important;
 	}
-
+	
+	#mida_intro,
+	#cat_intro,
 	#intro{
 		margin-top: 4rem;
 		font-size: 2.5rem;
 	}
 }
 
+/*.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px red solid;
+}
+.image2 {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  width: 92%;
+  height: 64%;
+  border: 1px green solid;
+}
+*/
 @media only screen and (max-width: 768px){
 
 	body{
@@ -319,6 +365,8 @@ a:hover{
 		margin-top: 20%;
 	}
 
+	#mida_intro,
+	#cat_intro,
 	#intro{
 		margin-top: 3rem;
 		text-align: center;
@@ -361,6 +409,8 @@ a:hover{
 		padding-left: 5% !important;
 	}
 
+	#mida_intro,
+	#cat_intro,
 	#intro{
 		font-size: 2.3rem;
 	}
