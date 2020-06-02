@@ -191,9 +191,14 @@ a:hover{
 }
 
 #brandNav{
-	border-radius: 50%;
-	height: 65px;
-	margin-top: -20%;
+	/*border-radius: 50%;*/
+	height: 6.5vh;
+	/*margin-top: -20%;*/
+}
+
+span#name{
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 .mida_profileClass,
@@ -278,6 +283,7 @@ a:hover{
 .infoBtn:hover{
   color:white !important;
   border: 0px #039be5 solid;
+  /*border: black;*/
 }
 
 .submitBtn:hover:before,
@@ -310,6 +316,38 @@ a:hover{
 #work_pic{
 	height: 100%;
 	width: 100%;
+}
+
+.html{
+	color: #e34f26;
+}
+
+.js{
+	color: #f7df1e;
+}
+
+.css{
+	color: #4c6ef5;
+}
+
+.react{
+	color: #00d8ff;
+}
+
+.node{
+	color:#6cc24a;
+}
+
+.python{
+	color:#4584b6;
+}
+
+.c{
+	color:#3F51B5;
+}
+
+.tool_icon{
+	font-size: 8vw;
 }
 
 @media only screen and (max-width: 1024px){
