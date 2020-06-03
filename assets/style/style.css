@@ -1,10 +1,14 @@
-#name:hover{
+/*#name:hover{
 	cursor: pointer;
-}
+}*/
 
-#name{
+/*#name{
 	font-weight: 700;
 	font-size: 30px;
+}*/
+
+.selected_nav{
+	border-bottom: solid #039be5 2px;
 }
 
 .navLink:hover{
@@ -19,16 +23,45 @@
 	color: #8bc34a !important;
 }
 
-.footer-copyright{
+/*.footer-copyright{
 	font-size: 16px;
 	padding: 30px;
-}
+}*/
 
 #apps{
 	margin-bottom: 10%
 }
 
-#contactSection{
+/*#img_img, #id_id {
+  width: 100px;
+  height: 100px;
+}
+
+#id_id {
+	margin: 0;
+}
+
+.x {
+  animation: x 13s linear infinite alternate;
+}
+
+.y {
+  animation: y 7s linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX( calc(100vw - 100px) );
+  }
+}
+
+@keyframes y {
+  100% {
+    transform: translateY( calc(100vh - 100px) );
+  }
+}*/
+
+/*#contactSection{
 	margin-bottom: 10%;
 }
 
@@ -97,15 +130,15 @@ input{
   color: #fff;
   background-color: #4aaaa5;
   border: 0;
-}
+}*/
 
 
 #mida_intro,
 #cat_intro,
 #intro{
-	font-size: 3rem;
-	text-align: center;
-	margin-top: 3.8%;
+	font-size: 3vh;
+	/*text-align: center;
+	margin-top: 3.8%;*/
 }
 
 #gif{
@@ -157,9 +190,9 @@ a:hover{
 	padding-top: 0px;
 }
 
-.row{
+/*.row{
 	text-align: center;
-}
+}*/
 
 .projectInfo{
 	text-align: left;
@@ -211,7 +244,7 @@ span#name{
 }
 
 .navbar{
-	font-size: 35px;
+	font-size: 4vh;
 	padding: 10px 130px 10px 130px;
 	background: white !important;
 	border-bottom: none !important;
@@ -347,12 +380,11 @@ span#name{
 }
 
 .tool_icon{
-	font-size: 8vw;
+	font-size: 3vh;
 }
 
-@media only screen and (max-width: 1024px){
+/*@media only screen and (max-width: 1024px){
 	body{
-		/*overflow-x: none;*/
 		max-width: 1024px !important;
 	}
 
@@ -371,7 +403,7 @@ span#name{
 		margin-top: 4rem;
 		font-size: 2.5rem;
 	}
-}
+}*/
 
 /*.parent {
   position: relative;
@@ -393,7 +425,7 @@ span#name{
   border: 1px green solid;
 }
 */
-@media only screen and (max-width: 768px){
+/*@media only screen and (max-width: 768px){
 
 	body{
 		max-width: 768px !important;
@@ -425,10 +457,9 @@ span#name{
 		padding-right: 15%;
 		padding-left: 15%;
 	}
-}
+}*/
 
-@media only screen and (max-width: 420px){
-	/*make this just a litle smaller to fit 411*/
+/*@media only screen and (max-width: 420px){
 	body{
 		max-width: 414px !important;
 	}
@@ -483,9 +514,9 @@ span#name{
 	.navbar{
 		text-align: center; 
 	}
-}
+}*/
 
-@media only screen and (max-width: 385px){
+/*@media only screen and (max-width: 385px){
 
 	body{
 		max-width: 375px !important;
@@ -513,15 +544,13 @@ span#name{
 		padding-right: 0px;
 	}
 
-}
+}*/
 
-@media only screen and (max-width: 320px){
+/*@media only screen and (max-width: 320px){
 
 	body{
 		max-width: 320px !important;
 	}
-
-
 
     #brandNav{
 		height: 0px !important;
@@ -539,5 +568,5 @@ span#name{
 	}
 
 }
-
+*/
 

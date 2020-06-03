@@ -4,11 +4,17 @@ $(document).ready(function(){
 	$("#cat_profile").hide();
 	$("#apps").hide();
 
+	$("#about").addClass('selected_nav');
+
 	$("#work").on("click",function(){
 		$("#mida_profile").show();
 		$("#cat_profile").show();
 		$("#apps").hide();
 		$("#profile").hide();
+
+		$("#about").removeClass('selected_nav');
+		$("#bootcamp").removeClass('selected_nav');
+		$("#work").addClass('selected_nav');
 	});
 
 	$("#about").on("click",function(){
@@ -16,6 +22,10 @@ $(document).ready(function(){
 		$("#cat_profile").hide();
 		$("#apps").hide();
 		$("#profile").show();
+
+		$("#about").addClass('selected_nav');
+		$("#bootcamp").removeClass('selected_nav');
+		$("#work").removeClass('selected_nav');
 	})
 
 	$("#bootcamp").on("click",function(){
@@ -23,6 +33,10 @@ $(document).ready(function(){
 		$("#cat_profile").hide();
 		$("#apps").show();
 		$("#profile").hide();
+
+		$("#about").removeClass('selected_nav');
+		$("#bootcamp").addClass('selected_nav');
+		$("#work").removeClass('selected_nav');
 	})
 
 	// adjust height on page load 
@@ -138,6 +152,46 @@ $(document).ready(function(){
 	$("#midaScroll").mouseleave(function(){
 		console.log('hiding')
 		$(this).tooltip({disabled: false});
+	});
+
+	var ctx = $('#mida_pie_chart');
+
+	data = {
+
+		// These labels appear in the legend and in the tooltips when hovering different arcs
+	    labels: [
+	        'JavaScript', // 15
+	        'React', // 25
+	        'PostgreSQL', // 30
+	        'Node.js', // 25
+	        'Express.js' // 15
+	    ],
+
+	    datasets: [{
+	        data: [15, 25, 40, 15, 10],
+            backgroundColor: [
+                '#f7df1e',
+                '#00d8ff',
+                '#336791',
+                '#6cc24a',
+                'rgba(153, 102, 255, 0.2)'
+            ],
+	    }],
+
+	};
+
+	var myPieChart = new Chart(ctx, {
+	    type: 'pie',
+	    data: data,
+	    options: {
+	        legend: {
+	            display: true,
+	            position: 'right',
+	            // labels: {
+	            //     fontColor: '#333'
+	            // }
+	        },
+	    }
 	});
 	
 

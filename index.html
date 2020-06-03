@@ -28,6 +28,11 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
+	<!-- ChartJS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	<!-- ChartJS CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+
 </head>
 <body>
 	
@@ -82,19 +87,43 @@
 				   
 						<div class="col-md-12 col-sm-12" id="intro">
 
-							<p>Hi, my name is <span style="color: #039be5">Richard Holme</span>. <br />
+							<p style="text-align: center">Hi, my name is <span style="color:#039be5;"><b>Richard Holme</b></span>.</p><br/>
 
-							I graduated from The Coding Bootcamp at UNC in 2018.
+							<div class="row">
+								<div class="col-md-4">
+									<!-- <span style="text-align: left;"><i style="color: #039be5; font-size: 3vh;" class="fas fa-graduation-cap"></i></span> -->
+									<p style="text-align: center;"><b>Education</b></p>
+									<p></p>
+									I graduated from The Coding Bootcamp at UNC-Chapel Hill in 2018. I'm slowly but surely working part time towards a CS degree. If you ask me when I'm going to graduate my response will be "forever and a day." 
+									</p>
+								</div>
+								<div class="col-md-4">
+									<!-- <span><i style="color: #039be5; font-size: 3vh;" class="fas fa-toolbox"></i></span> -->
+									<p style="text-align: center;"><b>Toolbox</b></p>
+									
+									Most of my experience is with JavaScript, HTML, CSS, React JS and Node.js. More recently I've had the opportunity to work with C in the embedded software arena. 
 
-							Most of my experience is around JavaScript, React.js, HTML and CSS. More recently I've had the opportunity to work with C in the embedded software arena. 
+									I've also had some academic exposure to Python, Java, C#, MySQL and MongoDB. 
+
+								</div>
+								<div class="col-md-4">
+									<!-- <i style="color: #039be5; font-size: 3vh;" class="fas fa-male"></i> -->
+									<p style="text-align: center;"><b>Me</b></p>
+									I was a box truck driver for the Inter-Faith Food Shuttle for 4 years after high school. About two years in, I took a few CS classes at Wake Tech. These classes turned the proverbial light bulb on and now I write software for a living.
+								</div>
+							</div>
+							
+						<!-- 	<p>
+							<b>About Me</b>: <br/><br/>
+							I graduated from The Coding Bootcamp at UNC-Chapel Hill in 2018. I'm slowly but surely working part time towards a CS degree. 
+
+							Most of my experience is with JavaScript, HTML, CSS, and React.js. More recently I've had the opportunity to work with C in the embedded software arena. 
 
 							I've also had some academic exposure to Python, Java and C#. 
 
-							This site is a way for me to keep my Web Dev skills intact while highlighting some my work. <br />
+							This site is a way for me to continue to polish my dev skills while highlighting some of my work. <br />
+							</p> -->
 
-							<!-- Click <span id="projectScroll">here</span> to see my projects!</p>
-							<br>
- -->							<!-- <p class="hidden-sm hidden-xs"><span id="arrow" class="fa fa-long-arrow-left"> </span> This is me in my natural habitat</p> --> 
 					
 						</div>
 					</div>
@@ -124,7 +153,16 @@
 							<!-- <div class="row">
 								<img id="work_pic" src="assets/images/mida_3.png">
 							</div> -->
-							<div class="row">
+							<!-- <div class="row"></div> -->
+							<p><b>MIDA Medical</b></p>
+							<p>I was brought on by Cat to build an internal website for some local engineers. The site is built around 6 Cat API's and is built with JavaScript, React.js, HTML and CSS. When it launched I had a userbase of about 10 engineers. That userbase has grown to about 500+. After this I worked for a short time on displays; this mostly involved XML. You know the touch sreen displays that are in cars? Well, this is the same thing, except tougher and inside a huge piece of construction equipment. Currently, I'm working with embedded software. </p>
+							
+					
+						</div>
+				   
+						<div class="col-md-6 col-sm-12" id="mida_intro">
+
+						<!-- 	<div class="row">
 								<div class="col-md-3 tool_icon html"><i class="fab fa-html5"></i></div>
 								<div class="col-md-3 tool_icon css"><i class="fab fa-css3-alt"></i></div>
 								<div class="col-md-3 tool_icon js"><i class="fab fa-js-square"></i></div>
@@ -133,16 +171,26 @@
 								<div class="col-md-3 tool_icon react"><i class="fab fa-react"></i></div>
 								<div class="col-md-3 tool_icon node"><i class="fab fa-node"></i></div>
 								<div class="col-md-3 tool_icon html"><img src="assets/images/postgresql.jpg"></div>
-							</div>
-					
-						</div>
-				   
-						<div class="col-md-6 col-sm-12" id="mida_intro">
+							</div> -->
 
-							<p>MIDA Medical</p>
-							<p>I was brought on by Cat to build an internal website for some local engineers. The site is built around 6 Cat API's and is built with JavaScript, React.js, HTML and CSS. When it launched I had a userbase of about 10 engineers. That userbase has grown to about 500+. After this I worked for a short time on displays; this mostly involved XML. You know the touch sreen displays that are in cars? Well, this is the same thing, except tougher and inside a huge piece of construction equipment. Currently, I'm working with embedded software. </p>
+							<!-- <div class="row">
+								<div class="col-md-3 tool_icon html">HTML</div>
+								<div class="col-md-3 tool_icon css">CSS</div>
+								<div class="col-md-3 tool_icon js">JavaScript</div>
+							</div>
+							<div class="row">
+								<div class="col-md-3 tool_icon react">React JS</div>
+								<div class="col-md-3 tool_icon node">Node.js</div>
+								<div class="col-md-3 tool_icon html">PostgreSQL</div>
+							</div> -->
+							<p><b>The MIDA Stack</b></p>
+							<div class="row">
+								<canvas id="mida_pie_chart"></canvas>
+							</div>
 							<!-- <p class="hidden-sm hidden-xs"><span id="arrow" class="fa fa-long-arrow-left"> </span> This is me in my natural habitat</p> --> 
-					
+							<!-- <div id="id_id" class="x">
+							  <img id="img_img" class="y" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" alt="codepen" />
+							</div> -->
 						</div>
 					</div>
 					
