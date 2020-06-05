@@ -15,10 +15,11 @@
 	background-color: #cfd8dc;
 }*/
 
-.cn {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
+html {
+
+  	overflow-y: scroll;
+  	/*overflow: hidden;*/
+  	
 }
 
 .mida_img{
@@ -28,9 +29,8 @@
 
 .cat_branding{
 	font-size: 16vh;
-	text-align: center
+	text-align: center;
 }
-
 .fa-hard-hat{
 	color: #FFC500;
 }
@@ -40,15 +40,16 @@
 }
 
 .selected_nav{
-	border-bottom: solid #8bc34a 2px;
+	/*#8bc34a*/
+	border-bottom: solid #304ffe 2px;
 }
 
 #resume_nav:hover{
-	color: #8bc34a !important;
+	color: #304ffe !important;
 }
 
 .blueA{
-	color: #039be5 !important;
+	color: #304ffe !important;
 }
 
 .greenA{
@@ -61,8 +62,14 @@
 }*/
 
 #apps{
-	margin-bottom: 10%;
+	margin-top: 10%;
 	text-align: center;
+	font-size: 3vh;
+	overflow-y: hidden;
+}
+
+.title_p{
+	margin-top: 10px;
 }
 
 /*#img_img, #id_id {
@@ -192,11 +199,17 @@ input{
 
 #mida_introRow,
 #cat_introRow,
+/*#bootcamp_intro,*/
 #introRow{
 
 	align-self: center;
 	display: flex;
   	justify-content: center;
+}
+
+#bootcamp_intro{
+	margin-top: 4vh;
+	font-size: 3vh;
 }
 
 #projectScroll{
@@ -226,15 +239,22 @@ a:hover{
 	width: 100px;
 }
 
-.img{
+.img,
+.info{
 	height: 300px;
+	/*override whatever is forcing this to 320px*/
+	max-height: 300px !important;
 }
 
-.info{
+.project_col{
+	max-height: 300px;
+}
+
+/*.info{
 	height: 250px;
 	margin: 10px;
 	padding-top: 0px;
-}
+}*/
 
 /*override default -15px margin*/
 .row{
@@ -245,33 +265,22 @@ a:hover{
 .projectInfo{
 	text-align: left;
 	clear: both;
-	font-size: 17px;
+	font-size: 2.8vh;
 }
 
 .skillText{
 	margin-top: 20px;
 }
 
-/*#mida_profile,
-#cat_profile
-{
-	height: 90vh;
-	border: 1px solid black;
-}*/
-
 #mida_profile,
 #cat_profile,
+/*#apps,*/
 #profile{
 	height: 100vh;
 	display: flex;
   	justify-content: center;
 	/*border: solid 1px black;*/
 	/*border: 1px solid black;*/
-}
-
-.rowLabel{
-	margin-top: 35px;
-	margin-bottom: 70px;
 }
 
 #brandNav{
@@ -283,14 +292,6 @@ a:hover{
 span#name{
 	margin: 0 !important;
 	padding: 0 !important;
-}
-
-.mida_profileClass,
-.cat_profileClass{
-	/*margin-top: 20vh;*/
-	/*display: flex;
-  	justify-content: center;
-  	align-items: center; */
 }
 
 .profileClass{
@@ -313,17 +314,19 @@ span#name{
 .submitBtn,
 .infoBtn{
   /*border: solid 2px #039be5 !important;*/
-  /*color: #039be5 !important;*/
+  color: black !important;
+  border-radius: 0 !important;
   border: solid 1px black !important;
-  position: relative;
+  /*font-weight: bold !important;*/
+  /*position: relative;*/
   height: 35px;
   width: 90px;
-  margin: 10px 7px;
-  padding: 5px 5px;
-  font-size: 15px;
-  border-radius: 4px;
+  /*margin: 10px 7px;*/
+  /*padding: 5px 5px;*/
+  /*font-size: 15px;*/
+  /*border-radius: 4px;*/
   text-transform: uppercase;
-  outline: 0;
+  /*outline: 0;
   overflow:hidden;
   background: none;
   z-index: 1;
@@ -332,10 +335,14 @@ span#name{
   -o-transition:      0.08s ease-in;
   -ms-transition:     0.08s ease-in;
   -moz-transition:    0.08s ease-in;
-  -webkit-transition: 0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;*/
  }
 
-.submitBtn,
+ .infoBtn:hover{
+ 	background-color: white !important;
+ }
+
+/*.submitBtn,
 .infoBtn{
   -webkit-transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
 }
@@ -358,20 +365,21 @@ span#name{
 .infoBtn:after {
   content: "";
   position: absolute;
-  background: #039be5;
+  background: #304ffe;
   bottom: 0;
   left: 0;
   right: 0;
   top: 100%;
   z-index: -2;
   -webkit-transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
-}
+}*/
 
-.submitBtn:hover,
+/*border: 2px #304ffe solid !important;*/
+/*border: black;*/
+
+/*.submitBtn:hover,
 .infoBtn:hover{
   color:white !important;
-  border: 0px #039be5 solid;
-  /*border: black;*/
 }
 
 .submitBtn:hover:before,
@@ -382,13 +390,13 @@ span#name{
 .submitBtn:hover:after,
 .infoBtn:hover:after {
   top: 0;
-}
+}*/
 
-.page-footer{
+/*.page-footer{
 	box-shadow: 0 .7px 8px 0 rgba(0,0,0,.9)
-}
+}*/
 
-#email,
+/*#email,
 #message{
 	border-top: none !important;
 	border-right: none !important;
@@ -398,7 +406,6 @@ span#name{
 
 #message{
 	width: 300px;
-	/*height: 300px;*/
 }
 
 #work_pic{
@@ -436,7 +443,7 @@ span#name{
 
 .tool_icon{
 	font-size: 3vh;
-}
+}*/
 
 /*@media only screen and (max-width: 1024px){
 	body{
