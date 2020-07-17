@@ -1,9 +1,9 @@
 // $("html").css("overflow","hidden");
 $(document).ready(function(){
 
-	$("#mida_profile").hide();
-	$("#cat_profile").hide();
-	$("#apps").hide();
+	// $("#mida_profile").hide();
+	// $("#cat_profile").hide();
+	// $("#apps").hide();
 
 	$("#about").addClass('selected_nav');
 	// $("html").css("overflow","hidden");

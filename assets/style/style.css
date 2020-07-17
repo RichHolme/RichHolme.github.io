@@ -29,7 +29,7 @@ body{
 }
 
 .container{
-	overflow-y: scroll;
+	/*overflow-y: scroll;*/
 }
 
 .mida_img{
@@ -277,6 +277,10 @@ a:hover{
 	margin-top: 20px;
 }
 
+#mida_profile{
+	/*background-color: lightgray;*/
+}
+
 #mida_profile,
 #cat_profile,
 #profile{
@@ -306,8 +310,8 @@ span#name{
 	font-size: 4vh;
 	padding: 10px 130px 10px 130px;
 	background: white !important;
-	/*border-bottom: none !important;*/
-	border-bottom: 1px solid black;
+	border-bottom: none !important;
+	/*border-bottom: 1px solid black;*/
 }
 
 .navbar-scroll{
@@ -347,28 +351,23 @@ span#name{
  	background-color: white !important;
  }
 
-@media (max-width: 768px) {
-	/*.landing_page_row{
-		background-color: red !important;
-		height: 100vh;
-		display: flex;
-  		justify-content: center;
-	}
-	
-	.landing_page_div{
-		align-self: center;
-		display: flex;
- 	 	justify-content: center;
-	}*/
+.hide{
+	/*display: block !important;*/
+}
 
-	.intro_p{
-		height: 100vh;
-		/*padding-top: 200px;*/
-	}
+@media (max-width: 768px) {
 
 	.navbar{
 		padding-right: 10px;
 		padding-left: 25px;
+	}
+
+	#profile{
+		height: 160vh;
+	}
+
+	.my_hide{
+		display: none !important;
 	}
 
 }
