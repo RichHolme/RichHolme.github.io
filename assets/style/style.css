@@ -25,7 +25,7 @@ html {
 body{
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
-	padding-top: 70px;
+	/*padding-top: 70px;*/
 }
 
 .container{
@@ -72,10 +72,11 @@ body{
 }*/
 
 #apps{
-	margin-top: 10%;
+	/*margin-top: 10%;*/
 	text-align: center;
 	font-size: 3vh;
 	overflow-y: hidden;
+	/*border: solid 1px black;*/
 }
 
 .title_p{
@@ -192,13 +193,25 @@ input{
 #mida_intro_img,
 #mida_intro,
 #cat_intro,
-#intro{
+#intro,
+#whats_up{
 	font-size: 3vh;
 	/*display: flex;
   justify-content: center;
   align-items: center; */
 	/*text-align: center;
 	margin-top: 3.8%;*/
+}
+
+#whats_up{
+	text-align: center;
+	margin-bottom: 0px !important;
+	height: 4vh;
+	margin-top: 2vh;
+}
+
+#mida_profile{
+	margin-top: -6vh;
 }
 
 /*#gif{
@@ -232,13 +245,35 @@ input{
 }
 
 a{
+	/*color: black !important;*/
+	/*text-decoration: none !important;*/
+}
+
+#credit_p{
+	font-size: 2.5vh;
+	text-align: center;
+}
+
+#credit{
+	color: #304ffe !important;
+}
+
+#credit:hover{
+	color: #304ffe !important;
+}
+
+#mida_link{
 	color: black !important;
-	text-decoration: none !important;
+}
+
+#mida_link:hover{
+	color: #304ffe !important;
 }
 
 a:hover{
-	text-decoration: none !important;
+	/*text-decoration: none !important;*/
 }
+
 .icon{
 	height: 100px;
 	width: 100px;
@@ -287,20 +322,26 @@ a:hover{
 	height: 100vh;
 	display: flex;
   	justify-content: center;
+  	/*border: solid 1px black;*/
+  	/*margin-top: -6.5vh;*/
 	/*border: solid 1px black;*/
 	/*border: 1px solid black;*/
+}
+
+#profile{
+	margin-top: -8.5vh;
 }
 
 #brandNav{
 	/*border-radius: 50%;*/
 	height: 6.5vh;
-	/*margin-top: -20%;*/
+	margin-top: 2vh;
 }
 
-span#name{
+/*span#name{
 	margin: 0 !important;
 	padding: 0 !important;
-}
+}*/
 
 .profileClass{
 	margin-top: 15%;
@@ -311,14 +352,15 @@ span#name{
 	padding: 10px 130px 10px 130px;
 	background: white !important;
 	border-bottom: none !important;
+	margin-bottom: -20px !important;
 	/*border-bottom: 1px solid black;*/
 }
 
-.navbar-scroll{
+/*.navbar-scroll{
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 
 	0 1px 5px 0 rgba(0,0,0,0.12), 
 	0 3px 1px -2px rgba(0,0,0,.12);
-}
+}*/
 
 .submitBtn,
 .infoBtn{
@@ -364,6 +406,10 @@ span#name{
 
 	#profile{
 		height: 160vh;
+	}
+
+	#mida_profile{
+		height: 200vh;
 	}
 
 	.my_hide{
