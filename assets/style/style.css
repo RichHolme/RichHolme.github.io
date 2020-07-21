@@ -231,7 +231,8 @@ input{
 }
 
 #bootcamp_intro{
-	margin-top: 4vh;
+	margin-top: 2vh;
+	margin-bottom: 4vh;
 	font-size: 3vh;
 }
 
@@ -263,6 +264,7 @@ a{
 }
 
 #mida_link{
+	text-decoration: none;
 	color: black !important;
 }
 
@@ -397,23 +399,44 @@ a:hover{
 	/*display: block !important;*/
 }
 
-@media (max-width: 768px) {
-
-	.navbar{
-		padding-right: 10px;
-		padding-left: 25px;
+@media (max-width: 992px) {
+	#profile{
+		/*height: 160vh;*/
+		height: 100%;
+		margin-top: 8.5vh;
 	}
 
-	#profile{
-		height: 160vh;
+	.intro_divs{
+		/*margin-top: 4vh;*/
+		margin-bottom: 4vh;
 	}
 
 	#mida_profile{
-		height: 200vh;
+		height: 100%;
+		margin-top: 6vh;
+		/*height: 200vh;*/
+	}
+}
+
+@media (max-width: 768px) {
+
+	/*.navbar{
+		padding-right: 10px;
+		padding-left: 25px;
+	}*/
+
+	#profile{
+		/*height: 160vh;*/
+		height: 100%;
 	}
 
-	.my_hide{
-		display: none !important;
+	#mida_profile{
+		height: 100%;
+		/*height: 200vh;*/
 	}
+
+	/*.my_hide{
+		display: none !important;
+	}*/
 
 }
