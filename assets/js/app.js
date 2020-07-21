@@ -5,49 +5,49 @@ $(document).ready(function(){
 	// $("#cat_profile").hide();
 	// $("#apps").hide();
 
-	$("#about").addClass('selected_nav');
+	// $("#about").addClass('selected_nav');
 	// $("html").css("overflow","hidden");
 
-	$("#work").on("click",function(){
-		$("#mida_profile").show();
-		$("#cat_profile").show();
-		$("#apps").hide();
-		$("#profile").hide();
+	// $("#work").on("click",function(){
+	// 	$("#mida_profile").show();
+	// 	$("#cat_profile").show();
+	// 	$("#apps").hide();
+	// 	$("#profile").hide();
 
-		$("#about").removeClass('selected_nav');
-		$("#bootcamp").removeClass('selected_nav');
-		$("#work").addClass('selected_nav');
+	// 	$("#about").removeClass('selected_nav');
+	// 	$("#bootcamp").removeClass('selected_nav');
+	// 	$("#work").addClass('selected_nav');
 
-		$(".img").removeClass('animated');
-		$(".img").removeClass('fadeInUp');
-	});
+	// 	$(".img").removeClass('animated');
+	// 	$(".img").removeClass('fadeInUp');
+	// });
 
-	$("#about").on("click",function(){
-		$("#mida_profile").hide();
-		$("#cat_profile").hide();
-		$("#apps").hide();
-		$("#profile").show();
+	// $("#about").on("click",function(){
+	// 	$("#mida_profile").hide();
+	// 	$("#cat_profile").hide();
+	// 	$("#apps").hide();
+	// 	$("#profile").show();
 
-		$("#about").addClass('selected_nav');
-		$("#bootcamp").removeClass('selected_nav');
-		$("#work").removeClass('selected_nav');
+	// 	$("#about").addClass('selected_nav');
+	// 	$("#bootcamp").removeClass('selected_nav');
+	// 	$("#work").removeClass('selected_nav');
 
-		$(".img").removeClass('animated');
-		$(".img").removeClass('fadeInUp');
-	})
+	// 	$(".img").removeClass('animated');
+	// 	$(".img").removeClass('fadeInUp');
+	// })
 
-	$("#bootcamp").on("click",function(){
-		$("#mida_profile").hide();
-		$("#cat_profile").hide();
-		$("#apps").show();
-		$("#profile").hide();
+	// $("#bootcamp").on("click",function(){
+	// 	$("#mida_profile").hide();
+	// 	$("#cat_profile").hide();
+	// 	$("#apps").show();
+	// 	$("#profile").hide();
 
-		$("#about").removeClass('selected_nav');
-		$("#bootcamp").addClass('selected_nav');
-		$("#work").removeClass('selected_nav');
+	// 	$("#about").removeClass('selected_nav');
+	// 	$("#bootcamp").addClass('selected_nav');
+	// 	$("#work").removeClass('selected_nav');
 
-		// $("html").css("overflow","visible");
-	})
+	// 	// $("html").css("overflow","visible");
+	// })
 
 	// adjust height on page load 
 	// let height = $( window ).height();
