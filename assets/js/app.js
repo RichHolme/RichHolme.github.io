@@ -1,4 +1,3 @@
-// $("html").css("overflow","hidden");
 $(document).ready(function(){
 
 	AOS.init({
