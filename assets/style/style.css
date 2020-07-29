@@ -239,7 +239,7 @@ button:active{
 	}
 }
 
-@media screen and (min-width: 2500px) {
+/*@media only screen and (min-width: 1020px), only screen and (min-height: 1360px) {
   	#apps,
 	#cat_intro_img,
 	#mida_intro_img,
@@ -248,13 +248,20 @@ button:active{
 	#intro,
 	#whats_up,
 	#bootcamp_intro,
-	.projectInfo,
-	.icon_credit,
 	.navbar{
 		font-size: 30px;
 	}
-}
 
-/*@media (max-width: 768px) {*/
+	.info{
+		font-size: 25px;
+	}
 
-/*}*/
+	.projectInfo{
+		font-size: 18px;
+	}
+
+	.icon_credit{
+		font-size: 15px;
+	}
+}*/
+
