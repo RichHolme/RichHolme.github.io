@@ -7,15 +7,19 @@ body{
 	/*padding-top: 70px;*/
 }
 
+a{
+	color: #304ffe !important;
+}
+
 .mida_img{
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 
-.cat_branding{
+/*.cat_branding{
 	font-size: 16vh;
 	text-align: center;
-}
+}*/
 .fa-hard-hat{
 	color: #FFC500;
 }
@@ -64,6 +68,7 @@ body{
 #intro,
 #whats_up{
 	font-size: 3vh;
+	/*font-size: max(3vw, 30px);*/
 }
 
 #whats_up{
@@ -102,10 +107,10 @@ body{
 	color: #039be5;
 }
 
-#credit_p{
-	font-size: 2.5vh;
+/*#credit_p{
+	font-size: 2.5vh;*/
 	/*text-align: center;*/
-}
+/*}*/
 
 #credit{
 	color: #304ffe !important;
@@ -205,6 +210,16 @@ body{
  	background-color: white !important;
  }
 
+.btn-default:active{
+	/*border: none !important;*/
+	/*border: solid 1px blue !important;*/
+	/*border-radius: 0 !important;*/
+}
+
+button:active{
+	/*border: solid 1px blue !important;*/
+}
+
 @media (max-width: 992px) {
 	#profile{
 		/*height: 160vh;*/
@@ -221,6 +236,22 @@ body{
 		height: 100%;
 		margin-top: 6vh;
 		/*height: 200vh;*/
+	}
+}
+
+@media screen and (min-width: 2500px) {
+  	#apps,
+	#cat_intro_img,
+	#mida_intro_img,
+	#mida_intro,
+	#cat_intro,
+	#intro,
+	#whats_up,
+	#bootcamp_intro,
+	.projectInfo,
+	.icon_credit,
+	.navbar{
+		font-size: 30px;
 	}
 }
 
