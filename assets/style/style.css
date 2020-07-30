@@ -1,39 +1,13 @@
 html {
+	font-size: 2vw;
 }
 
 body{
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
-	/*padding-top: 70px;*/
 }
 
 a{
-	color: #304ffe !important;
-}
-
-.mida_img{
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-
-/*.cat_branding{
-	font-size: 16vh;
-	text-align: center;
-}*/
-.fa-hard-hat{
-	color: #FFC500;
-}
-
-.fa-tools{
-	color: #000000;
-}
-
-.selected_nav{
-	/*#8bc34a*/
-	border-bottom: solid #304ffe 2px;
-}
-
-#resume_nav:hover{
 	color: #304ffe !important;
 }
 
@@ -47,7 +21,7 @@ a{
 
 #apps{
 	text-align: center;
-	font-size: 3vh;
+	font-size: 1.6em;
 	overflow-y: hidden;
 }
 
@@ -55,20 +29,11 @@ a{
 	margin-top: 10px;
 }
 
-#cat_intro_img,
-#mida_intro_img{
-	text-align: center;
-	align-self: center;
-}
-
-#cat_intro_img,
-#mida_intro_img,
 #mida_intro,
 #cat_intro,
 #intro,
 #whats_up{
-	font-size: 3vh;
-	/*font-size: max(3vw, 30px);*/
+	font-size: 1.6em;
 }
 
 #whats_up{
@@ -78,15 +43,8 @@ a{
 	margin-top: 2vh;
 }
 
-#mida_profile{
-	margin-top: -6vh;
-}
-
-#mida_introRow,
-#cat_introRow,
-/*#bootcamp_intro,*/
+#profile_introRow,
 #introRow{
-
 	align-self: center;
 	display: flex;
   	justify-content: center;
@@ -95,29 +53,7 @@ a{
 #bootcamp_intro{
 	margin-top: 2vh;
 	margin-bottom: 8vh;
-	font-size: 3vh;
-}
-
-#projectScroll{
-	font-weight: 600;
-	cursor: pointer;
-}
-
-#projectScroll:hover{
-	color: #039be5;
-}
-
-/*#credit_p{
-	font-size: 2.5vh;*/
-	/*text-align: center;*/
-/*}*/
-
-#credit{
-	color: #304ffe !important;
-}
-
-#credit:hover{
-	color: #304ffe !important;
+	font-size: 1em;
 }
 
 #mida_link{
@@ -137,7 +73,6 @@ a{
 .img,
 .info{
 	height: 300px;
-	/*override whatever is forcing this to 320px*/
 	max-height: 300px !important;
 }
 
@@ -153,50 +88,31 @@ a{
 .projectInfo{
 	text-align: left;
 	clear: both;
-	font-size: 2.8vh;
+	font-size: .8em;
 }
 
 .icon_credit{
-	font-size: 1.8vh;
+	font-size: .7em;
 	margin-bottom: 0px;
 }
 
-.skillText{
-	margin-top: 20px;
-}
-
-#mida_profile,
-#cat_profile,
-#profile{
+#profile,
+#profile_intro{
 	height: 100vh;
 	display: flex;
   	justify-content: center;
-  	/*border: solid 1px black;*/
 }
 
-#profile{
+#profile,
+#profile_intro{
 	margin-top: -8.5vh;
 }
 
 #brandNav{
-	/*border-radius: 50%;*/
-	height: 6.5vh;
+	height: 3.5em;
 	margin-top: 2vh;
 }
 
-.profileClass{
-	margin-top: 15%;
-}
-
-.navbar{
-	font-size: 4vh;
-	padding: 10px 130px 10px 130px;
-	background: white !important;
-	border-bottom: none !important;
-	margin-bottom: -20px !important;
-}
-
-.submitBtn,
 .infoBtn{
   color: black !important;
   border-radius: 0 !important;
@@ -204,64 +120,23 @@ a{
   height: 35px;
   width: 90px;
   text-transform: uppercase;
- }
-
- .infoBtn:hover{
- 	background-color: white !important;
- }
-
-.btn-default:active{
-	/*border: none !important;*/
-	/*border: solid 1px blue !important;*/
-	/*border-radius: 0 !important;*/
 }
 
-button:active{
-	/*border: solid 1px blue !important;*/
+.infoBtn:hover{
+ 	background-color: white !important;
+ 	/*border: 0px !important;*/
 }
 
 @media (max-width: 992px) {
-	#profile{
-		/*height: 160vh;*/
+
+	#profile,
+	#profile_intro{
 		height: 100%;
 		margin-top: 8.5vh;
 	}
 
 	.intro_divs{
-		/*margin-top: 4vh;*/
 		margin-bottom: 4vh;
 	}
 
-	#mida_profile{
-		height: 100%;
-		margin-top: 6vh;
-		/*height: 200vh;*/
-	}
 }
-
-/*@media only screen and (min-width: 1020px), only screen and (min-height: 1360px) {
-  	#apps,
-	#cat_intro_img,
-	#mida_intro_img,
-	#mida_intro,
-	#cat_intro,
-	#intro,
-	#whats_up,
-	#bootcamp_intro,
-	.navbar{
-		font-size: 30px;
-	}
-
-	.info{
-		font-size: 25px;
-	}
-
-	.projectInfo{
-		font-size: 18px;
-	}
-
-	.icon_credit{
-		font-size: 15px;
-	}
-}*/
-

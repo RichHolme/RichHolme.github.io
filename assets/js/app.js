@@ -14,20 +14,6 @@ $(document).ready(function(){
 	    window.open('https://richholme.github.io/RPS-Game/');
 	});
 
-	function removeNavShadow() {
-	  var scroll = $(window).scrollTop();
-	  if (scroll === 0) {
-	    
-	    $(".navbar").removeClass("navbar-scroll");
-	  } else {
-	    $(".navbar").addClass("navbar-scroll");
-	  }
-	}
-	removeNavShadow();
-	$(window).scroll(function() {
-	  removeNavShadow();
-	});
-
 	$(".infoBtn").on('click', function(){
 		event.preventDefault();
 		let id = $(this).attr("id");
